@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output-method</title>
+    <script>
+        function txt(){
+            var a=document.getElementById('nm').value;
+            document.write(a);
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="nm" placeholder="Name*">
+    <br><br>
+    <button type="button" id="btn" onclick="txt()" style="height: 50px; width: 150px; background-color: rgb(6, 4, 39); font-size: 20px; color: white; font-family: bold;">Print</button>
+</body>
+</html>
