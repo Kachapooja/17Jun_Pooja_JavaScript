@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <div class="cart">
+            <div class="products">
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1lbcIu6bJmqtZSYiDShOsbaOT6T8NetsqIKRzWVYtCw&usqp=CAU&ec=48600112" alt="" >
+                    <div class="product-info">
+                        <h3 class="name">Puma Shoes</h3><br>
+                        <b>Price: </b><input type="text" id="prc" value="5500" readonly style="border: none; width: 45px;"><br><br>
+                        <b>Qty: </b><input type="number" id="qty" value="1" min="1" max="5" onchange="total()">
+                        <p class="product-dlt">
+                            <!-- <i class="fa fa-trash"></i> -->
+                            <span class="dlt">Delete</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="total">
+                <p>
+                    <span >SubTotal Rs. :</span>
+                    <span id="subtotal">5500</span>
+                </p>
+                <p>
+                    <span >10% Discount Price :</span>
+                    <span id="dscnt">550</span>
+                </p><p>
+                    <span >Total :</span>
+                    <span id="totl">4950</span>
+                </p>
+                <a href="#"> Buy Now </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

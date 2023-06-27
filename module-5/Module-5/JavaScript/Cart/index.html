@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./js/cart.js"></script>
+    <title>Cart</title>
+</head>
+<body>
+    <div id="crt">
+    <section class="c1">
+        <div>View Cart(1)</div>
+        <div>Pname</div>
+        <div>Photo</div>
+        <div>Price</div>
+        <div>Qty.</div>
+        <div>Description</div>
+        <div>Action</div>
+    </section>
+    <section class="c2">
+        <div>1001</div>
+        <div>Puma Shoes</div>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1lbcIu6bJmqtZSYiDShOsbaOT6T8NetsqIKRzWVYtCw&usqp=CAU&ec=48600112" style="height: 70px; width: 70px;"></div>
+        <div><input type="text" id="prc" value="5500" readonly style="border: none; width: 45px;"></div>
+        <div><input type="number" id="qty" value="1" min="1" max="5" onchange="total()"></div>
+        <div>Very Nice Products</div>
+        <div><a href="#">Delete</a></div>
+    </section>
+    <span>
+        <h2 style="padding: 8px; background-color: black; width: 30%; color:white">SubTotal Rs. : <label id="subtotal">5500</label></h2>
+        <h2 style="padding: 8px; background-color: black; width: 30%; color:white">Discount :<label id="dscnt">550</label></h2>
+        <h2 style="padding: 8px; background-color: black; width: 30%; color:white">Total : <label id="totl">4950</label></h2>
+    </span> 
+</div>
+</body>
+</html>

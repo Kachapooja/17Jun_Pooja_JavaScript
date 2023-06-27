@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert</title>
+    <script>
+        function Add(){
+            var a=parseInt(document.getElementById("a").value);
+            var b=parseInt(document.getElementById("b").value);
+            var c=a+b;
+            // document.write(c);    //total is 2030 and total shown by the othr page
+            // document.getElementById('result').innerHTML='Additions of numbers is : '+c;
+
+            alert('Additions of number : ' +c)
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Enter a Number : <input type="text" id="a" placeholder="Enter a Values">
+        <br><br>
+        Enter b Number : <input type="text" id="b" placeholder="Enter b Values">
+        <button type="button" onclick="Add()">Add</button>
+    </form>
+    <p id="result"></p>
+</body>
+</html>
