@@ -28,10 +28,11 @@
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-google"></i>
                 <i class="fa-brands fa-telegram"></i>
-                <u>Cart</u><i class="fa-solid fa-cart-shopping"></i>
+                <span class="crt">Cart</span><i class="fa-solid fa-cart-shopping"></i>
             </div>
             <div class="login">
-                <a href="#">Login</a>
+                <a href="#">
+                    <button id="view-btn" >Login</button></a>
             </div>
         </div>
     </header>
@@ -40,8 +41,12 @@
 
     <header class="hd">
         <ul class="items">
-            <li><i class="fa-solid fa-basket-shopping"></i><b>Shraddha commerce</b></li>
-            <li><a href="#">Home</a></li>
+            <li id="bag">
+                <a href="../Shopping-Bag/Shopping_bag.html">
+                    <i class="fa-solid fa-basket-shopping"></i>&ensp;<b>Shraddha commerce</b>
+                </a>
+            </li>
+            <li><a href="../Home-Error/home.html">Home</a></li>
             <li><a href="#">Women's Products</a></li>
             <li><a href="#">Men's Products</a></li>
             <li><a href="#">Kids's Products</a></li>
@@ -49,7 +54,7 @@
             <li><a href="#">
                 <select name="" id="acnt">
                 <option value="account">Account</option></select></a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="../Contact-Us/contactus.html">Contact Us</a></li>
         </ul>
     </header>
 
