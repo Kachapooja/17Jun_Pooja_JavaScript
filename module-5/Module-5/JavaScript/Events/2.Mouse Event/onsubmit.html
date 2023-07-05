@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onsubmit-btn</title>
+    <script>
+        function test()
+        {
+            if(document.frm.nm.value=='')
+            {
+                alert('Please enter your Name *')
+                document.frm.nm.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    
+<form action="welcome.html" name="frm" onsubmit="return test(this.value)">
+    Enter Name: <input type="text" name="nm" placeholder="Enter Name *">
+    <br><br>
+    <button type="submit"> Add Name</button>
+</form>
+
+</body>
+</html>

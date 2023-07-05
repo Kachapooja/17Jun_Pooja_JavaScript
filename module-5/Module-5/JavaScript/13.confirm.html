@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cnfrm(){
+            if(confirm('Are You Sure to delete data?'))
+            {
+                alert('Your data deleted')
+                window.location='https://www.flipkart.com';
+            }
+            else{
+                window.location='13.confirm.html'
+            }
+        }
+    </script>
+</head>
+<body style="background-color: violet;">
+    <button type="button" onclick="cnfrm()" style="padding: 5px; background-color: powderblue; font-weight: bold; font-size: 18px;">Delete here</button>
+</body>
+</html>

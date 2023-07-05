@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Of Triangle</title>
+    <script src="./js/dv.js"></script>
+    <style>
+    .calc{
+        width: 450px;
+        height: auto;
+        margin: auto;
+        padding: 25px;
+        border: 1px solid black;
+        background-color: powderblue;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    input{
+        margin-left: 20px;  
+    }
+    #dyv{
+        padding: 7px;
+        width: 80px;
+        margin-left: 60px;  
+        border: none;
+        border-radius: 5px;
+    }
+    button{
+        padding: 10px;
+        text-align: center;
+        border: none;
+        background-color: #201b66;
+        color: #fff;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+    h1{
+        text-align: center;
+    }
+    #hm{
+        margin-left: 190px;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+<div class="calc">
+    <h1>Add Dynamic Value</h1>
+    <form>
+        <label>Enter Dynamic Value : </label>
+        <input type="text" name="edynamic" id="edynamic">
+        <br><br>
+        
+        <button type="button" onclick="dv()"> Click Me </button>
+        <button type="reset" id="rst">Reset</button>
+        <input type="text" name="dyv" id="dyv">
+        <br><br>
+
+        <button type="text" id="hm">
+            <a href="./index.html">Home</a>
+        </button>
+     </form>
+</div>
+</body>
+</html>

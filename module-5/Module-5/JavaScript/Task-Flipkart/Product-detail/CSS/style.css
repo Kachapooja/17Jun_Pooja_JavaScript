@@ -42,14 +42,14 @@ i{
 .grp i{
     padding: 3px;
 }
-.login #view-btn{
+/* .login #view-btn{
     background-color: #f02864;
     border: none;
     border-radius: 4px;
     color: #fff;
     padding: 10px 18px;
     cursor: pointer;
-}
+} */
 
 /*    Header Bar       */
 
@@ -156,48 +156,113 @@ button{
 /*  Product  Sub-Section */
 
 .product-box{
-    background-color: #f02864;
+    height: 470px;
+    /* background-color: #f02864; */
 }
 .product{
     display: flex;
+}
+.product-img1 .img1{
+    margin: 10px;
+    width: 350px;
+    height: 450px;
+}
+.p-1{
+    display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-}
-.product-img1{
-    width: 100%;
-    height: 200px;
-    background-color: orange;
-}
-/* .product-box{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-}
-.product{
-    width: 270px;
-    text-align: center;
-    padding: 15px 30px;
-}
-.img1{
-    width: 200px;
-    margin-top: 1%;
+    gap: 19px;
+    padding: 15px 80px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .product-name{
     font-weight: bold;
-    padding: 7px 0;
+    font-size: 1.2rem;
 }
 .product-price{
-    color: rgb(65, 95, 65);
-    font-size: 16px;
-    font-weight: bold;
-    padding: 8px 0;
+    font-size: 1.2rem;
 }
-.p-btn {
-    border: 1px solid transparent;
-    padding: 4px 8px;
-    background-color: rgb(228, 70, 42);
-    color: #fff;
-    font-size: small;
-    text-decoration: none;
+.grn{
+    color: green;
+    font-weight: bold;
+}
+.value input{
+    width: 30%;
+    padding: 3px;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.detail p{
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+h3 i{
+    color: black;
+}
+#red{
+    background-color: red;
+}
+.p-btn button{
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;  
+    background-color: #297a1e;
     cursor: pointer;
-} */
+}
+button a{
+    color: white;
+}
+
+/* footer Section */
+
+footer{
+    background-color: #070129;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px 35px;
+    justify-content: space-around;
+    /* color: #fff; */
+}
+.footer-col{
+    display: flex;
+    flex-direction: column;
+}
+.footer-hd{
+    font-size: x-large;
+}
+.footer-itm{
+    display: flex;
+    flex-direction: column;
+    padding: 19px 0;
+    gap: 5px;
+}
+.footer-itm a{
+    text-decoration: none;
+    color: #fff;
+    font-size: large;
+}
+.ft-address{
+    padding: 19px 0;
+}
+.grn-clr{
+    color: green;
+}
+hr{
+    border-width: 1px;
+    overflow: hidden;
+    border-style: solid;
+    color: #1a0688;
+}
+.cpy{
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 0;
+}
+

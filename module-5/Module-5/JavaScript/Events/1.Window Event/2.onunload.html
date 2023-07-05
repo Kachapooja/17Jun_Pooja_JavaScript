@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onunload-event</title>
+    <style>
+        #para{
+            width: 50%;
+            height: auto;
+            margin: auto;
+            margin-top: 5%;
+        }
+    </style>
+    <script>
+        function bg()
+        {
+            document.getElementById('para').style='color:red';
+        }
+    </script>
+</head>
+<body onunload="bg()">
+   <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquid, maxime suscipit soluta dolor magnam tenetur debitis placeat, officiis aspernatur aliquam magni eius quam ducimus quisquam? Eos sapiente delectus aliquam?</p> 
+</body>
+</html>

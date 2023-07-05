@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard-event</title>
+    <script>
+        function testing1()
+        {
+            document.getElementById('para1').style='font-size:30px; transition:2s ease all; color:red';
+        }
+        function testing2()
+        {
+            document.getElementById('para2').style='font-size:30px; transition:2s ease all; color:red';
+        }
+        function testing3()
+        {
+            document.getElementById('para3').style='font-size:30px; transition:2s ease all; color:red';
+        }
+    </script>
+</head>
+<body>
+   <p id="para1">Pooja Kacha</p> 
+   <button type="button" onkeypress="testing1()">Keypress</button>
+   <p id="para2">Pooja Kacha</p> 
+   <button type="button" onkeydown="testing2()">Keydown</button>
+   <p id="para3">Pooja Kacha</p> 
+   <button type="button" onkeyup="testing3()">Keyup</button>
+
+</body>
+</html>

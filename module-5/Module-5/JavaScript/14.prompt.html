@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #calc{
+            width: 50%;
+            height: 25vh;
+            background-color: coral;
+            margin-top: 7%;
+            margin-left: 25%;
+        }
+        .calculator{
+            width: 100%;
+            height: auto;
+        }
+        button{
+            padding: 10px 30px;
+            margin-top: 8%;
+            margin-left: 4%;
+        }
+    </style>
+    <script>
+        function add()
+        {
+            var p=parseInt(prompt('Enter p values :'));
+            var q=parseInt(prompt('Enter q values :'));
+            var st=p+q;
+            alert('Additions of number is :' +st)
+
+        }
+        function sub()
+        {
+            var p=parseInt(prompt('Enter p values :'));
+            var q=parseInt(prompt('Enter q values :'));
+            var st=p-q;
+            alert('Substractions of number is :' +st)
+
+        }
+        function mul()
+        {
+            var p=parseInt(prompt('Enter p values :'));
+            var q=parseInt(prompt('Enter q values :'));
+            var st=p*q;
+            alert('Multiplications of number is :' +st)
+
+        }
+        function div()
+        {
+            var p=parseInt(prompt('Enter p values :'));
+            var q=parseInt(prompt('Enter q values :'));
+            var st=p/q;
+            alert('Divisions of number is :' +st)
+
+        }
+    </script>
+</head>
+<body>
+    <section id="calc">
+        <div class="calculator">
+            <button type="button" id="btn" onclick="add()">Additions</button>
+            <button type="button" id="btn" onclick="sub()">Substractions</button>
+            <button type="button" id="btn" onclick="mul()">Multiplications</button>
+            <button type="button" id="btn" onclick="div()">Divisions</button>
+        </div>
+
+    </section>
+</body>
+</html>

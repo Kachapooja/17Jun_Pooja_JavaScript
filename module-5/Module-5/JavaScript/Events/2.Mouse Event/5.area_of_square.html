@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of Square</title>
+    <script src="./js/aos.js"></script>
+    <style>
+    .calc{
+        width: 450px;
+        height: auto;
+        margin: auto;
+        padding: 25px;
+        border: 1px solid black;
+        background-color: powderblue;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    input{
+        margin-left: 85px;  
+    }
+    #aosq{
+        margin-left: 33px; 
+        padding: 7px;
+        width: 80px;  
+        border: none;
+        border-radius: 5px; 
+    }
+    button{
+        padding: 10px;
+        text-align: center;
+        border: none;
+        background-color: #201b66;
+        color: #fff;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+    h1{
+        text-align: center;
+    }
+    #hm{
+        margin-left: 190px;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+<div class="calc">
+    <h1>Area Of Square (cm)</h1>
+    <form>
+        <label>Enter a Number: </label>
+        <input type="text" name="ename" id="ename">
+        <br><br>
+
+        <button type="button" onclick="aos()"> Area of Square </button>
+        <button type="reset" id="rst">Reset</button>
+        <input type="text" name="aosq" id="aosq">
+        <br><br>
+
+        <button type="text" id="hm">
+            <a href="./index.html">Home</a>
+        </button>
+     </form>
+</div>
+</body>
+</html>

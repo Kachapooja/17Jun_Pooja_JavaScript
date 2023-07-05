@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple-interest</title>
+    <script src="./js/si.js"></script>
+    <style>
+        .calc{
+            width: 450px;
+            height: auto;
+            margin: auto;
+            padding: 25px;
+            border: 1px solid black;
+            background-color: powderblue;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        input{
+            margin-left: 20px;  
+        }
+        #year{
+            margin-left: 27px;
+        }
+        #roi{
+            margin-left: 85px;  
+        }
+        button{
+            padding: 10px;
+            text-align: center;
+            border: none;
+            background-color: #201b66;
+            color: #fff;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+        h1{
+            text-align: center;
+        }
+        #hm{
+            margin-left: 190px;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+   <div class="calc">
+       <h1>Simple Interest</h1>
+       <form>
+           <label>Enter Principle Amount: </label>
+           <input type="text" name="pname" id="pname">
+           <br><br>
+           <label>Rate Of Interest:</label>
+           <input type="text" name="roi" id="roi">
+           <br><br>
+           <label>Enter Number of Years:</label>
+           <input type="text" name="year" id="year">
+           <br><br>
+           <button type="button" onclick="si()">Calculate</button>
+           <button type="reset" id="rst">Reset</button>
+           <button type="text" id="hm">
+                <a href="./index.html">Home</a>
+            </button>
+        </form>
+        <h3 id="result"></h3>
+   </div> 
+</body>
+</html>
