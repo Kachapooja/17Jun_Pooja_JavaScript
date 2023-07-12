@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Logout</title>
+    <script src="./login-logout.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            background-color: #5d5ebe;
+        }
+        form{
+            border: 1px solid rgb(53, 6, 16);
+            height: auto;
+            width: 30%;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #ebd44f;
+        }
+        p{
+            font-size: 1.2rem;
+            color: crimson;
+        }
+        input{
+            border-color: teal;
+        }
+        #lgnas{
+            border-color: teal; 
+        }
+        #sub{
+            margin-left: 150px;
+            padding: 7px;
+            border-color: transparent;
+            background-color: rgb(39, 114, 212);
+            font-size: 20px;
+            border-radius: 5px;
+            color: #fff;
+        }
+        button{
+            padding: 7px;
+            border-color: transparent;
+            background-color: rgb(39, 114, 212);
+            font-size: 20px;
+            border-radius: 5px;
+            color: #fff;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <form>
+
+    <p><b>Login</b></p>
+    <hr>
+    <br>
+    Login as : <select name="lgnas" id="lgnas">
+    <option value="">Please Select</option>
+    <option value="Manager">Manager</option>
+    <option value="Faculty">Faculty</option>
+    <option value="Developer">Developer</option>
+    </select>
+    <br><br>
+    Username : <input type="text" id="unm">
+    <br><br>
+    User-email: <input type="email" id="mail">
+    <br><br>
+    <input type="submit" name="" id="sub" value="Login" onclick="lgnfrm()">
+    <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
