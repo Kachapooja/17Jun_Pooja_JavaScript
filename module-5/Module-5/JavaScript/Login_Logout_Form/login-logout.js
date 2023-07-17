@@ -15,6 +15,6 @@ function lgnfrm()
         window.location="developer.html";
     }
     else{
-        document.write('something went wrong');
+        alert('something went wrong');
     }
 }
