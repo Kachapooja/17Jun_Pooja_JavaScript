@@ -5,73 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Header</title>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
-    <script>
-        $(document).ready(function(){
-            // $('#slider').cycle('fade');
-            // $('#slider').cycle('zoom');
-            //$('#slider').cycle('scrollRight');
-            //$('#slider').cycle('scrollleft');
-            // $('#slider').cycle('shuffle');
-            $('#slider').cycle('scrollRight, zoom, shuffle');
-        })
-    </script>
+    <title>Forgot Password</title>
+    <style>
+        form {
+            background-color: aliceblue;
+            height: 300px;
+            width: 200px;
+            margin: auto;
+            display: table;
+        }
+        h1 {
+            color: blue;
+        }
+        /* loader start */
+
+        #loader{
+            width: 300px;
+            height: 250px;
+            background: url('./image/loader1.gif') no-repeat;
+            background-size: 300px 250px;
+            margin-left: 39%;
+            margin-top: 13%;
+        }
+        #mainwebsite{
+            display: none;
+        }
+
+    </style>
 </head>
-
 <body>
-
     <!-- loader apply here -->
-
     <div id="loader"></div>
     <div id="mainwebsite">
-    
-    <!-- Header Start -->
-    <header>
-        <div class="logo">
-            <img src="https://images.indianexpress.com/2021/01/myntra.png"></a>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Kids</a></li>
-                <li><a href="#">Home&Living</a></li>
-                <li><a href="#">Beauty</a></li>
-                <li><a href="#">Studio<sup>New</sup></a></li>
-                <li><input type="search" name="search" id="" value="Search for products,brands and more"></li>
-                <li><ruby>Profile<rt><i class="fa-regular fa-user fa-2xl"></i></rt></ruby></li>
-                <li><ruby>Wishlist<rt><i class="fa fa-heart fa-2xl"></i></rt></ruby></li>
-                <li><ruby>Bag<rt><i class="fa fa-bag-shopping fa-2xl"></i></rt></ruby></li>
-                <li><a href="https://api.whatsapp.com/send?phone=8758046704&text=hii">Contact Us</a></li>
-            </ul>
-                <!-- <button></button>              -->
-        </div>
-    </header>
-    <!-- Header End -->
 
-    <!-- Slider Start -->
+        <!-- main form section -->
 
-    <div class="image-1">
-        <img src="https://media.glamour.com/photos/569594ae93ef4b09520d2ee1/master/w_1600%2Cc_limit/fashion-2014-10-clueless-shopping-main.jpg" alt="">
+        <form action="https://www.careercenterlogin.com">
+            <fieldset>
+                <center><h1>Tops</h1></center>
+                <center><h2>Career center login</h2></center>
+                <label for="">Mobile Number</label>
+                <input type="text" name="" id="" required pattern="[0,9]" minlength="10" maxlength="11"><br><br>
+                <label for="">Password</label>
+                <input type="password" name="pass" id="" required pattern="[a-z,A-Z,@,0-9]"><br><br>
+                <a href="./forgot_password(Tops).html">Forgot Password?</a><br><br>
+                <center><input type="submit" name="submit" id="" value="Login"></center>
+            </fieldset>
+        </form>
     </div>
-    <section id="slider">
-        <img src="https://t3.ftcdn.net/jpg/02/41/43/18/360_F_241431868_8DFQpCcmpEPVG0UvopdztOAd4a6Rqsoo.jpg" alt="">
-        <img src="https://www.kotak.com/content/dam/Kotak/product_card_images/how-credit-cards-enhance-your-shopping-experience.jpg" alt="">
-        <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_522735456_249841.jpg" alt="">
-        <img src="https://t4.ftcdn.net/jpg/03/25/70/05/360_F_325700552_5QJD12HDtfii4xkGXnjLworiJMedgZQc.jpg" alt="">
-        <img src="https://www.digitalmenta.com/wp-content/uploads/2019/04/potenciar-campanas-shopping.jpg" alt="">
-    </section>
-    <div class="image-2">
-        <img src="https://alkhail.ae/wp-content/uploads/2022/07/Budget-friendly-1-to-10-Dirham-shops-in-Sharjah.jpg" alt="">
-    </div>
-
-    <!-- Slider End -->
-
-</div>
 </body>
-
 </html>

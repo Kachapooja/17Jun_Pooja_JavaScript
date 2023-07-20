@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./js/login.js"></script>
+    <title>Forgot Password</title>
+    <style>
+        body{
+            background-size: cover;
+            background: url('./image/login-bg.png');
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            border: 2px solid #4c92be;
+            background-color: aliceblue;
+            height: 350px;
+            border-radius: 10px;
+            width: 27%;
+            margin: auto;
+            margin-top: 13%;
+            box-shadow:  1px 1px 6px 1px #629abd;
+            display: none;
+        }
+        .welcome{
+            border: 2px solid #4c92be;
+            background-color: aliceblue;
+            height: 400px;
+            border-radius: 10px;
+            width: 27%;
+            margin: auto;
+            margin-top: 13%;
+            box-shadow:  1px 1px 6px 1px #629abd;
+        }
+        img{
+            height: auto;
+            width: 100%;
+        }
+        h1 {
+            color: #4c92be;
+        }
+        .inpt{
+            margin-left: 20%;
+        }
+        input{
+            width: 180px;
+        }
+        button{
+            margin-left: 25%;
+            margin-top: 2%;
+            padding: 8px 50px;
+            background-color: #dd2c2c;
+            color: white;
+            font-size: 19px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        /* loader start */
+
+        #loader{
+            width: 300px;
+            height: 250px;
+            background: url('./image/loader1.gif') no-repeat;
+            background-size: 300px 250px;
+            margin-left: 39%;
+            margin-top: 13%;
+            top: 10%;
+            left: 50%;
+        }
+        #mainwebsite{
+            display: none;
+        }
+
+    </style>
+    <script>
+        var mayvar;
+        function mainfunction()
+        {
+            myvar=setTimeout("test()",1500);
+        }
+        function test()
+        {
+            document.getElementById("loader").style="display:none";
+            document.getElementById("mainwebsite").style="display:block";
+        }
+    </script>
+</head>
+<body onload="mainfunction()">
+    <!-- loader apply here -->
+    <div id="loader"></div>
+    <div id="mainwebsite">
+
+        <!-- main form section -->
+
+        <div id="container">
+            
+            <!-- content page -->
+            
+            <div class="welcome p-5 login mx-auto mt-5" >
+                
+                <h1 class="text-center text-info" style="text-align: center">Welcome To Tops</h1>
+                <h3 class="text-center" style="text-align: center;">Career Center Dashboard</h3>
+
+                <img src="./image/welcome.gif" alt="">
+
+                <button type="button" onclick="logout()"><i class="fa-solid fa-power-off"></i>&ensp;Log-out</button>
+                
+            </div>
+                
+            <!-- register form start -->
+            <form>
+                <center><h1>Tops</h1></center>
+                <center><h2>Career center login</h2></center>
+                <div class="inpt">
+                    <label for="">Mobile Number</label><br>
+                    <input type="text" name="" id="mobile" required pattern="[0,9]" minlength="10" maxlength="11"><br><br>
+                    <label for="">Password</label><br>
+                    <input type="password" name="pass" id="pass" required pattern="[a-z,A-Z,@,0-9]"><br><br>
+                    <a href="./forgot_password(Tops).html">Forgot Password?</a><br><br>
+                </div>
+                <button type="button">Log-out</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
