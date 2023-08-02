@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:darksalmon
+}
+.container{
+    background-color: lightgreen;
+    border: 1px solid black;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    margin-top: 2.5%;
+    /* position: relative;
+    top: 10%; */
+}
+.dot{
+    width: 100px;
+    height: 50px;
+    transform: skew(20deg);
+    border: 1px solid #c04131;
+    position: absolute;
+    left: 8%;
+    top: 8%;
+    background-color: darkgreen;
+    color: white;
+    padding: 12px 5px;
+    font-size: 19px;
+    text-align: center;
+}
+.dot1{
+    width: 900px;
+    left: 20%;
+}
+.detail{
+    position: absolute;
+    top: 23%;
+    list-style: none;
+    font-size: 19px;
+    margin-left: 2%;
+}
+p::before{
+    content: "\00BB";
+    color: blue;
+}
+.detail p{
+    text-decoration:underline;
+}
+.box{
+    height:auto;
+    width:950px;
+    border:1px solid black;
+}
+.detail1{
+    margin-top: 52%;
+    list-style: none;
+    font-size: 19px;
+    margin-left: 2%;
+}
+.detail1 p{
+    text-decoration:underline;
+}
+.box1{
+    height:auto;
+    width:950px;
+    border:1px solid black;
+}
+.boxes{
+    height: 100px;
+    width: 20%;
+    background-color: darkorange;
+    padding: 25px;
+}
+.block 
+{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+}
+.detail2{
+    margin-top: 15%;
+    list-style: none;
+    font-size: 19px;
+    margin-left: 2%;
+}
+.detail2 p{
+    text-decoration:underline;
+}
+.box2{
+    height:auto;
+    width:950px;
+    border:1px solid black;
+}
+
+

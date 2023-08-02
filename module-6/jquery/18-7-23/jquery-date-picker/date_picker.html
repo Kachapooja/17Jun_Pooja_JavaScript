@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="./CSS/jquery-ui.css">
+    <!-- date picker plugis -->
+    <script src="./js/jquery-ui.js"></script>
+    <title>date-picker</title>
+    <script>
+
+        $(document).ready(function(){
+
+            $("#date-picker").datepicker();
+        });
+    </script>
+</head>
+<body>
+    <center>
+        <label>Select DOB</label><br><br>
+        <input type="text" placeholder="dd/mm/yy" required id="date-picker">
+        <br><br>
+    </center>
+</body>
+</html>

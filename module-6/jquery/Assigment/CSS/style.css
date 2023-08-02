@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+    width: 50%;
+}
+#btn1{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#btn2{
+    position: absolute;
+    top: 41%;
+    left: 5%;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#btn3{
+    position: absolute;
+    top: 52%;
+    left: 5%;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#btn4{
+    position: absolute;
+    top: 63%;
+    left: 5%;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+img{
+    height: 610px;
+    width: 1348px;
+}
+h1{
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    width: 50%;
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+}

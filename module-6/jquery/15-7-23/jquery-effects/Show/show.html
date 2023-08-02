@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show-Effect</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("body").css({"width":"auto","margin":"0px","padding":"0px","background-color":"black"});
+            $("#header").css({"width":"100%","height":"auto","padding":"10px","background-color":"red"});
+            $(".btn-login button").css({"margin-left":"15%","border":"none","background-color":"#4458c9","padding":"8px","color":"white","border-radius":"5px","font-size":"15px"});
+
+            $("#bt-clk1").click(function(){
+                // $("#login-form").fadeToggle("slow");
+                // $("#login-form").fadeToggle("fast");
+                $("#login-form").hide(4000);
+            })
+
+            $("#bt-clk2").click(function(){
+                // $("#login-form").fadeToggle("slow");
+                // $("#login-form").fadeToggle("fast");
+                $("#login-form").show(4000);
+            })
+
+            $("#bt-clk3").click(function(){
+                // $("#login-form").fadeToggle("slow");
+                // $("#login-form").fadeToggle("fast");
+                $("#login-form").toggle(4000);
+            })
+        })
+    </script>
+    <style>
+        #login-form{
+            width: 40%;
+            height: auto;
+            margin: auto;
+            padding: 25px;
+            box-shadow: 1px 1px 2px 5px #267b97;
+            margin-top: 8%;
+            background-color: #c0e227;
+            border-radius: 4px;
+        }
+        #btn{
+            padding: 7px;
+            background-color: #4458c9;
+            color: white;
+            font-size: large;
+            border-radius: 5px;
+            border: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <div class="btn-login">
+            <button id="bt-clk1">Hide Login Here</button>
+            <button id="bt-clk2">Show Login Here</button>
+            <button id="bt-clk3">Toggle Login Here</button>
+        </div>
+    </section>
+    <section id="login-form">
+        <div class="login">
+            <h1>Login Form</h1>
+            <form>
+                <input type="text" name="name" placeholder="Username *" required>
+                <br> <br>
+
+                <input type="password" name="password" placeholder="Password *" required>
+                <br> <br>
+
+                <input type="submit" id="btn" value="SignIn" name="name" placeholder="Username *" required>
+                <br> <br>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
