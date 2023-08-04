@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <title>Que-4</title>
+    <script>
+        $(document).ready(function(){
+            $(".sp").css({"color":"red","border":"2px solid red"})
+        });
+    </script>
+    <style>
+        .main-part{
+            margin-top: 150px;
+        }
+        div{
+            border: 2px solid red;
+            margin-top: 5%;
+            width: auto;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <button type="button" style="margin-left: 5%;">
+        <a href="../Q-3/index.html">Prew</a></button>
+    <button type="button" style="margin-left: 80%;">
+        <a href="../index.html">Home</a></button>
+
+    <div class="container">
+        <span class="dot">Que-4</span>
+        <span class="dot dot1">Event bubbling tickling example</span>
+
+        <div class="main-part">
+                <div class="p1">body(great-great-grandparent)
+                    <div>div (great-grandparent)
+                        <ul>ul(grandparent)
+                            <li>li(direct parent)
+                                <span class="sp">span</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

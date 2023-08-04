@@ -13,8 +13,6 @@ body{
     width: 90%;
     margin: auto;
     margin-top: 2.5%;
-    /* position: relative;
-    top: 10%; */
 }
 .dot{
     width: 100px;
@@ -23,7 +21,7 @@ body{
     border: 1px solid #c04131;
     position: absolute;
     left: 8%;
-    top: 8%;
+    top: 18%;
     background-color: darkgreen;
     color: white;
     padding: 12px 5px;
@@ -33,4 +31,43 @@ body{
 .dot1{
     width: 900px;
     left: 20%;
+}
+.box{
+    height:auto;
+    width:950px;
+    border:1px solid black;
+}
+.detail{
+    position: absolute;
+    top: 32%;
+    list-style: none;
+    font-size: 19px;
+    margin-left: 2%;
+}
+p::before{
+    content: "\00BB";
+    color: blue;
+}
+.detail p{
+    text-decoration:underline;
+}
+#slider{
+    width: 30%;
+    height: 150px;
+    margin-left: 47%;
+}
+#slider img{
+    width: 100%;
+    height: 150px;
+}
+a{
+    text-decoration: none;
+    color:#fff ;
+}
+button{
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(99, 84, 235);
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

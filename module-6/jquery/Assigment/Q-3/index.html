@@ -4,14 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Que-3</title>
+    <!--called online CDN of jquery  -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- called cycle.min.js plugins for slider -->
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
     <link rel="stylesheet" href="./CSS/style.css">
+    <script>
+        $(document).ready(function(){
+            $("#slider").cycle("shuffle");
+        });
+    </script>
 </head>
 <body>
+
+    <button type="button" style="margin-left: 5%;">
+        <a href="../Q-2/index.html">Prew</a></button>
+        <button type="button" style="margin-left: 80%;">
+            <a href="../Q-4/index.html">Next</a></button>
+
     <div class="container">
         <span class="dot">Que-3</span>
         <span class="dot dot1">How to create slider with animation?</span>
 
+        <div class="detail">
+            <div class="box">
+                <u><span style="color: #281d94; font-size: 22px;">Syntax:</span> </u><br><br>
+                $(document).ready(function(){ <br>
+                    &emsp;$("Id_name").cycle("Effect"); <br>
+                });<br><br>
+
+                <u><span style="color: #dd0a0a; font-size: 22px;">Example:</span> </u><br><br>
+                $(document).ready(function(){ <br>
+                    &emsp;$("#slider").cycle("shuffle"); <br>
+                });<br><br>
+            </div>
+            <br>
+            <p>Image-Slider</p>
+
+            <div id="slider">
+
+                <img src="./image/image-1.jpg" alt="">
+                <img src="./image/image-2.jpg" alt="">
+                <img src="./image/image-3.jpg" alt="">
+                <img src="./image/image-4.jpg" alt="">
+
+            </div>
+        </div>
     </div>
 </body>
 </html>
