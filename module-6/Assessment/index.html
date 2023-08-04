@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/date.css">
+    <script src="./js/date.js"></script>
+    <script src="./js/min.js"></script>
+    <title>Assessment</title>
+    <script>
+
+        $(document).ready(function(){
+
+            $("#date-picker").datepicker();
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form>
+            First Name:
+            <input type="text" name="name" id="" placeholder="Enter your first name">
+            <br><br>
+
+            Last Name:
+            <input type="text" name="name" id="" placeholder="Enter your last name">
+            <br><br>
+
+            Email:
+            <input type="text" name="Email" id="" placeholder="It should contain @..">
+            <br><br>
+
+            Mobile:
+            <input type="tel" name="phone" id="" required pattern="[0-9]{10,11}">
+            <br><br>
+
+            Gender:
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <br>
+
+            Date Of Birth :
+            <input type="text" placeholder="mm/dd/yy" required id="date-picker">
+
+        </form>
+    </div>
+</body>
+</html>
