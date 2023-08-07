@@ -9,7 +9,7 @@ body{
 .container{
     background-color: lightgreen;
     border: 1px solid black;
-    height: 630px;
+    height: 530px;
     width: 90%;
     margin: auto;
     margin-top: 2.5%;
@@ -42,4 +42,21 @@ button{
     background-color: rgb(99, 84, 235);
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-part{
+    border: 2px solid red;
+    margin-top: 150px;
+}
+.main-part *{
+    margin: 15px;
+    padding: 5px;
+    border: 2px solid red;
+}
+div{
+    margin-top: 5%;
+    width: auto;
+    color: red;
+}
+li{
+    list-style: none;
 }

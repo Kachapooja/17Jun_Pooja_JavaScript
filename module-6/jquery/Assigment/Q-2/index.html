@@ -13,6 +13,34 @@
             $(".ans-box").css({"height":"150px","width":"150px","background-color":"brown","border":"1px solid black","margin-top":"30px"});
         });
     </script>
+    <script>
+
+        $(document).ready(function(){
+            $("#pooja").click(function(){
+                $(".addcls").addClass();
+            })
+        })
+
+        $(document).ready(function(){
+            $("#btnrmv").click(function(){
+                $(".rmvcls").removeClass();
+            })
+        });
+        
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("div").animate({
+                    left:"250px"
+                });
+            });
+        });
+
+        $(document).ready(function(){
+
+        })
+    </script>
 </head>
 <body>
 
@@ -62,7 +90,6 @@
             <li>&#8594;This method does not remove existing class attributes, it only adds one or more class names to the class attribute.</li><br>
 
             <li>&#8594;The removeClass() method removes one or more class names from the selected elements.</li><br>
-
             <div class="box1">
 
                 <u><span style="color: #281d94; font-size: 22px;">Syntax: </span></u>(Add Class)<br><br>
@@ -102,27 +129,22 @@
             
             <p><u>Ans-Box:</u></p>
             <!-- <div> -->
-                <button id="btnadd">Add Class</button>
+                <button id="pooja">Add Class</button>
 
                 <button id="btnrmv">Remove Class</button>
 
-                <p style="width: 30%; height: 50px; line-height: 50px;">This is Class</p><br><br>
+                <!-- <p style="width: 30%; height: 50px; line-height: 50px;">This is Class</p><br><br> -->
+
+                
+
+            <div class="addcls" style="height: 200px; width: 200px; background-color: red;"></div>
+            <div class="rmvcls" style="height: 200px; width: 200px; background-color: red;"></div>
+   
+
 
             <!-- </div> -->
 
-            <script>
-                $(document).ready(function(){
-                    $("#btnadd").click(function(){
-                        
-                        $("p").addClass("red");
-                    });
-
-                    $("#btnrmv").click(function(){
-                        
-                        $("p").removeClass("red");
-                    });
-                });
-            </script>
+            
         </div>
 
         <!-- jquery animation -->
@@ -154,17 +176,7 @@
             <br>
             <div class="block"></div>
 
-            <script>
-                $(document).ready(function(){
-                    $("#btn").click(function(){
-                        $("div").animate({
-                            left:"250px",
-                            top:"250px",
-                            right:"200px"
-                        });
-                    });
-                });
-            </script>
+            
         </div>
 
     </div>

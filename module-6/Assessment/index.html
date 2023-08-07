@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/date.css">
     <script src="./js/date.js"></script>
@@ -19,29 +20,76 @@
 <body>
     <div class="container">
         <form>
-            First Name:
-            <input type="text" name="name" id="" placeholder="Enter your first name">
+            <label>First Name:</label>
+            <input type="text" name="name" id="" placeholder="Enter your first name" required pattern="[a-z,A-Z]" style="width: 300px; margin-left: 60px;">
             <br><br>
 
-            Last Name:
-            <input type="text" name="name" id="" placeholder="Enter your last name">
+            <label>Last Name:</label>
+            <input type="text" name="name" id="" placeholder="Enter your last name" required pattern="[a-z,A-Z]" style="width: 300px; margin-left: 62px;">
             <br><br>
 
-            Email:
-            <input type="text" name="Email" id="" placeholder="It should contain @..">
+            <label>Email:</label>
+            <input type="text" name="Email" id="" placeholder="It should contain @.." style="width: 300px; margin-left: 95px;">
             <br><br>
 
-            Mobile:
-            <input type="tel" name="phone" id="" required pattern="[0-9]{10,11}">
+            <label>Mobile:</label>
+            <input type="tel" name="phone" id="" required pattern="[0-9]" maxlength="10" style="width: 300px; margin-left: 85px;">
             <br><br>
 
-            Gender:
-            <input type="radio" name="gender">Male
+            <label>Gender:</label>
+            <input type="radio" name="gender" style="margin-left: 85px;">Male
             <input type="radio" name="gender">Female
-            <br>
+            <br><br>
 
-            Date Of Birth :
-            <input type="text" placeholder="mm/dd/yy" required id="date-picker">
+            <label>Date Of Birth:</label>
+            <input type="text" placeholder="mm/dd/yy" required id="date-picker" style="width: 300px; margin-left: 40px;"> <i class="fa-solid fa-calendar-days"></i>
+            <br><br>
+
+            <label>Address:</label>
+            <textarea name="" id="" cols="10" rows="6" style="width: 300px; margin-left: 75px;"></textarea>
+            <br><br>
+
+            <label>City:</label>
+            <input type="text" name="city" id="" required pattern="[a-z,A-Z]" style="width: 300px; margin-left: 100px;">
+            <br><br>
+
+            <label>Area PIN:</label>
+            <input type="text" name="" id="" required pattern="[0-9]" maxlength="6" style="width: 300px; margin-left: 63px;">
+            <br><br>
+
+            <label>State:</label>
+            <input type="text" name="" id="" required pattern="[a-z,A-Z]" style="width: 300px; margin-left: 93px;">
+            <br><br>
+
+            <label>Qualification:</label>
+            <select name="" id="" style="width: 300px; margin-left: 36px;">
+                <option value="">Select Qualification</option>
+                <option value="">B.B.A</option>
+                <option value="">M.B.A</option>
+                <option value="">B.C.A</option>
+                <option value="">M.B.A</option>
+                <option value="">B.sc.</option>
+                <option value="">M.sc.</option>
+                <option value="">Engg.</option>
+            </select>
+            <br><br>
+
+            <label>Specialization:</label>
+            <input type="checkbox" name="course" id="">Computer Scienece <br>
+            <input type="checkbox" name="course" id="" style="margin-left: 132px;">Information Technology <br>
+            <input type="checkbox" name="course" id="" style="margin-left: 132px;">Computer Architecture <br>
+            <input type="checkbox" name="course" id="" style="margin-left: 132px;">Tele Communication <br>
+            <br><br>
+
+            <label>Password:</label>
+            <input type="password" name="" id="" required pattern="[0-9,@,a-z]" style="width: 300px; margin-left: 56px;">
+            <br><br>
+
+            <button type="submit" id="" style="color: white; background-color: green; border: none; padding: 10px; border-radius: 3px;">Registered</button>
+            
+
+
+
 
         </form>
     </div>
