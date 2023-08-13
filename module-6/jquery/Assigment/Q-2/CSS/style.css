@@ -9,7 +9,7 @@ body{
 .container{
     background-color: lightgreen;
     border: 1px solid black;
-    height: auto;
+    height: 2500px;
     width: 90%;
     margin: auto;
     margin-top: 2.5%;
@@ -79,7 +79,7 @@ p::before{
     position: absolute;
 }
 .detail2{
-    margin-top: 15%;
+    margin-top: 3%;
     list-style: none;
     font-size: 19px;
     margin-left: 2%;
@@ -102,5 +102,12 @@ button{
     background-color: rgb(99, 84, 235);
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn{
+        border: 2px solid blue;
+        background: red;
+        padding: 15px;
+        height: 250px;
+        width: 250px;
 }
 

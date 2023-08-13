@@ -6,28 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="./js/min.js"></script>
     <title>Que-2</title>
+
+    <!-- apply css jquery -->
     <script>
         $(document).ready(function(){
             $(".ans-box").css({"height":"150px","width":"150px","background-color":"brown","border":"1px solid black","margin-top":"30px"});
         });
     </script>
+
+    <!-- apply addclass and removeclass -->
+    
+    <!-- apply addclass -->
+
     <script>
 
         $(document).ready(function(){
-            $("#pooja").click(function(){
-                $(".addcls").addClass();
-            })
-        })
+            $("#addcls").click(function(){
+                $(".rmv").addClass("btn");
+            });
+        });
 
+    </script>
+
+    <!-- apply removeclass -->
+
+    <script>
         $(document).ready(function(){
-            $("#btnrmv").click(function(){
-                $(".rmvcls").removeClass();
-            })
+            $("#rmvcls").click(function(){
+                $(".rmv").removeClass("btn");
+            });
         });
         
     </script>
+
+    <!-- apply animation -->
     <script>
         $(document).ready(function(){
             $("#btn").click(function(){
@@ -37,10 +50,9 @@
             });
         });
 
-        $(document).ready(function(){
-
-        })
     </script>
+
+    
 </head>
 <body>
 
@@ -49,6 +61,7 @@
         <button type="button" style="margin-left: 80%;">
             <a href="../Q-3/index.html">Next</a></button>
 
+            
     <div class="container">
         <span class="dot">Que-2</span>
         <span class="dot dot1">How to Apply CSS Using JQuery, How to Add Class and Remove Class in
@@ -57,40 +70,53 @@
             <!-- apply css -->
 
         <div class="detail">
-            <p>How To Apply CSS in jQuery:</p><br>
+            <p><b>How To Apply CSS in jQuery:</b></p><br>
 
             <li>&#8594;The css() method sets or returns one or more style properties for the selected elements.</li>
 
+            <!-- syntax & example -->
+
             <div class="box">
+
+                <!-- syntax -->
+
                 <u><span style="color: #281d94; font-size: 22px;">Syntax:</span> </u><br><br>
                 $(document).ready(function(){ <br>
                     &emsp;$("document").css("propertyname","value"); <br>
                 });<br><br>
+
+                <!-- example -->
 
                 <u><span style="color: #dd0a0a; font-size: 22px;">Example:</span> </u><br><br>
                 $(document).ready(function(){ <br>
                     &emsp;$(".ans-box").css({"height":"150px","width":"150px","background-color":"brown","border":"1px solid black"}); <br>
                 });<br>
             </div><br>
+
             <p><u>Ans-Box:</u></p>
             <div class="ans-box"></div>
         </div>
         <br><br>
 
-        <!-- add class & remove -->
+        <!-- add class & remove class -->
 
 
         <!-- add class -->
 
         <div class="detail1">
-            <p>How to Add Class and Remove Class in Jquery:</p><br>
+            <p><b>How to Add Class and Remove Class in Jquery:</b></p><br>
 
             <li>&#8594;The addClass() method adds one or more class names to the selected elements.</li><br>
 
             <li>&#8594;This method does not remove existing class attributes, it only adds one or more class names to the class attribute.</li><br>
 
             <li>&#8594;The removeClass() method removes one or more class names from the selected elements.</li><br>
+
+            <!-- syntax & example -->
+
             <div class="box1">
+
+                <!-- syntax -->
 
                 <u><span style="color: #281d94; font-size: 22px;">Syntax: </span></u>(Add Class)<br><br>
 
@@ -98,17 +124,21 @@
                     &emsp;$('selector').addClass(class_name); <br>
                 });<br><br>
 
+                <!-- example -->
+
                 <u><span style="color: #dd0a0a; font-size: 22px;">Example: </span></u>(Add Class)<br><br>
 
                 $(document).ready(function(){ <br>
 
-                    &emsp;$("#btnadd").click(function(){ <br>
+                    &emsp;$("#addcls").click(function(){ <br>
                         
-                    &emsp; &emsp;$("p").addClass("red"); <br>
+                    &emsp; &emsp; $(".rmv").addClass("btn"); <br>
 
                 });<br><br>
 
                 <!-- remove class -->
+
+                <!-- syntax -->
 
                 <u><span style="color: #281d94; font-size: 22px;">Syntax: </span></u>(Remove Class)<br><br>
                 
@@ -116,57 +146,56 @@
                     &emsp;$('selector').removeClass(class_name); <br>
                 });<br><br>
 
+                <!-- example -->
+
                 <u><span style="color: #dd0a0a; font-size: 22px;">Example: </span></u>(Remove Class)<br><br>
                 
                 $(document).ready(function(){ <br>
 
-                    &emsp;$("#btnrmv").click(function(){ <br>
+                    &emsp;$("#rmvcls").click(function(){ <br>
                         
-                    &emsp; &emsp;$("p").removeClass("red"); <br>
+                    &emsp; &emsp;$(".rmv").removeClass("btn"); <br>
 
                     }); <br>
             </div><br>
             
             <p><u>Ans-Box:</u></p>
-            <!-- <div> -->
-                <button id="pooja">Add Class</button>
-
-                <button id="btnrmv">Remove Class</button>
-
-                <!-- <p style="width: 30%; height: 50px; line-height: 50px;">This is Class</p><br><br> -->
-
                 
+            <button id="addcls">Add Class</button>
 
-            <div class="addcls" style="height: 200px; width: 200px; background-color: red;"></div>
-            <div class="rmvcls" style="height: 200px; width: 200px; background-color: red;"></div>
-   
-
-
-            <!-- </div> -->
-
-            
+            <button id="rmvcls">Remove Class</button>
+                        
+                <div class="rmv btn">
+    
+                    <img src="./image/cartoon.jpg" height='150px' width="150px">
+                </div>
         </div>
 
         <!-- jquery animation -->
 
         <div class="detail2">
-            <p>jQuery Animation :</p><br>
+            <p><b>jQuery Animation :</b></p><br>
 
             <li>&#8594;The jQuery animate() method is used to create custom animations.</li>
 
+            <!-- syntax & example -->
+
             <div class="box2">
+
+                <!-- syntax -->
+
                 <u><span style="color: #281d94; font-size: 22px;">Syntax:</span> </u><br><br>
                 $(document).ready(function(){ <br>
                     &emsp;$(selector).animate({params},speed,callback); <br>
                 });<br><br>
 
+                <!-- example -->
+
                 <u><span style="color: #dd0a0a; font-size: 22px;">Example:</span> </u><br><br>
                 $(document).ready(function(){ <br>
                     &emsp;$("#btn").click(function(){ <br>
                         &emsp;&emsp;$("div").animate({ <br>
-                            &emsp;&emsp;&emsp;left:"250px", <br>
-                            &emsp;&emsp;&emsp;right:"200px", <br>
-                            &emsp;&emsp;&emsp;top:"250px" <br>
+                            &emsp;&emsp;&emsp;left:"250px" <br>
                             &emsp;&emsp;}) <br>
                             &emsp;}); <br>
                 });<br>
@@ -176,7 +205,6 @@
             <br>
             <div class="block"></div>
 
-            
         </div>
 
     </div>
