@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <title>Que-3</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <button type="button" class="nxt" style="margin-left: 5%;">
+        <a href="../Que-2/index.html">Prew</a>
+    </button>
+    <button type="button" class="nxt" style="margin-left: 80%;">
+        <a href="../Que-4/index.html">Next</a>
+    </button>
+
+
+    <!-- Que : 3 Start -->
+
+    <span class="dot">Que-3</span>
+    <span class="dot dot1">Create a Layout</span>
+        
+    <!-- Que : 3 Ans -->
+    
+    <div class="container-fluid" style="margin-top: 10%;">
+
+        <!-- navbar start -->
+
+        <nav class="navbar navbar-expand-lg
+            navbar-light" style="background-color: #353942;">
+            <a href="#" class="navbar-brand" style="color: #b9babf;">Carousel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link" style="color: #c7ccd0; margin-top: 6px;">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link" style="color: #61666d; margin-top: 6px;">Link</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link" style="color: #4b4f58; margin-top: 6px;">Disabled</a>
+                    </li>
+                    <li>
+                        <div class="input-group" style="margin-left: 750px;">
+                            <input type="search" name="search" placeholder="Search" style=" margin-top: 3px;">
+                            <button type="button" class="btn" style="border-color: darkgreen; border-width: 2px; color: darkgreen; margin-left: 18px;">Search</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- slider start -->
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" style="background-color: lightgray; width: 100%; height: 300px;">
+                <div class="carousel-item active p-5 " style="margin-top: 55px;">
+                  <div class="h1 text-start" id="heading">Example headline.</div>
+                  <div class="text text-start" id="para">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
+                  <button type="button" class="btn btn-primary" id="bg">Sign up today</button>
+                </div>
+                <div class="carousel-item p-5" style="margin-top: 55px;">
+                    <div class="h1 text-center" id="heading">Another example headline.</div>
+                    <div class="text text-center" id="para">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
+                    <button type="button" class="btn btn-primary" id="bg" style="margin-left: 550px;">Learn More</button>
+                </div>
+                <div class="carousel-item  p-5" style="margin-top: 55px;">
+                    <div class="h1 text-end" id="heading">One more for good measure.</div>
+                    <div class="text text-end" id="para">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
+                    <button type="button" class="btn btn-primary" id="bg" style="margin-left: 1075px;">Browse gallery</button>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>  
+
+        <!-- content1 start -->
+
+        <div class="row">
+            <div class="col-md-3" style="margin-left: 160px;">
+                <div class="crcl">
+                    <div id="circle" style="margin-left: 105px;"></div>
+                    <h2 class="text-center">Heading</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum illo sequi culpa, repudiandae non rem praesentium? Sint corporis impedit commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repellendus?</p>
+                    <button type="button" class="btn btn-secondary" style="margin-left: 70px;">View details >></button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="crcl">
+                    <div id="circle" style="margin-left: 105px;"></div>
+                    <h2 class="text-center">Heading</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum illo sequi culpa, repudiandae non rem praesentium? Sint corporis impedit commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repellendus?</p>
+                    <button type="button" class="btn btn-secondary" style="margin-left: 70px;">View details >></button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="crcl">
+                    <div id="circle"style="margin-left: 105px;" ></div>
+                    <h2 class="text-center">Heading</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum illo sequi culpa, repudiandae non rem praesentium? Sint corporis impedit commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repellendus?</p>
+                    <button type="button" class="btn btn-secondary" style="margin-left: 70px;">View details >></button>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- content2 start -->
+
+        <div class="row mt-5" style="margin-left: 11%;">
+            <div class="col-md-7">
+                <h2>First featurette heading. <span class="text-muted"> It'll blow your mind.</span></h2>
+                <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5">
+                <div class="box">
+                    <span class="box1">500x500</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row mt-5" style="margin-left: 11%;">
+            <div class="col-md-5">
+                <div class="box">
+                    <span class="box1">500x500</span>
+                </div>
+            </div>
+            <div class="col-md-7" style="margin-left: -200px;">
+                <h2>Oh yeah, it's that good.<span class="text-muted">See for yourself.</span></h2>
+                <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row mt-5" style="margin-left: 11%;">
+            <div class="col-md-7">
+                <h2>And lastly, this one.<span class="text-muted"> Checkmate.</span></h2>
+                <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5">
+                <div class="box">
+                    <span class="box1">500x500</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- footer start -->
+
+        <footer>
+            <div class="ftr" style="margin-left: 11%;">
+                <p>&copy;2017-2018 Company Inc. <a href="#" style="text-decoration: none;">- Privacy Terms</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

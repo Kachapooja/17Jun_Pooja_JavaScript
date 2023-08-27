@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- bootstrap stylesheet -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+     <!-- bootstrap js -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+     
+</head>
+<body>
+    <!-- header -->
+    <section id="header">
+
+        <div class="container">
+            <!-- applied grid for header -->
+            <div class="row">
+                <div class="col-md-1 logo p-2">
+                    <img src="./image/logo.png" class="img-fluid">
+                </div>
+                <div class="col-md-5 search-box p-2">
+                    <form method="post">
+                        <div class="input-group">
+                            <input type="text" name="search" placeholder="search for products brands and more" class="form-control border border-0" required>
+                            <button type="button" class="border border-0 border-light bg-light"><span class="bi bi-search text-primary"></span></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4 ms-2 account p-2">
+                    <!-- seller more & cart -->
+                    <ul class="header-link">
+                        <li><a href=""></a><button type="button" class="btn btn-md w-0 bg-white border border-0" data-bs-toggle="modal" data-bs-target="#login">Login</button></a></li>
+                        <li><a href="">Become a seller</a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                        <ul class="dropdown-menu bg-primary p-3" style="min-width: 230px;">
+                        <li><a href="">24x7 Services</a></li>
+                        <li><a href="">Return Policy</a></li>
+                        <li><a href="">24x7 Customer Support</a></li>
+                        <li><a href="">Call Us</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#" data-bs-target="#crt"
+                            data-bs-toggle="modal"><span class="bi bi-cart position-relative"></span>Cart <span class="bagde bg-danger rounded-pill translate-middle top-0 start-100">0</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- flipkart navbar start here -->
+    <nav class="nav navbar bg-light navbar-expand-md p-3">
+        <!-- logo in navbar -->
+        <a href="#" class="navbar-brand ms-2">We Belive in Good Services</a>
+        <!-- main links of navbar -->
+        <!-- collpasible navbar toggler -->
+        <!-- <button type="button" class="btn btn-lg bg-primary text-white navbar-toggler" data-bs-toggle="collapse" data-bs-target="#btn-coll">
+            <i class="bi bi-grid-3x3-gap"></i>
+        </button> -->
+        <div class="collapse navbar-collapse" id="btn-coll">
+            <ul class="navbar-link p-0 m-0">
+                <li class="dropdown"><a href="#" class="nav-link dropdown-toggle">Electronics</a>
+                    <ul class="dropdown-menu" style="min-width: 200px !important">
+                        <li><a href="#" class="nav-link">Refrigrator</a></li>
+                        <li><a href="#" class="nav-link">A.C.</a></li>
+                        <li><a href="#" class="nav-link">Mobiles</a></li>
+                        <li><a href="#" class="nav-link">Washing Machine</a></li>
+                    </ul>
+                
+                </li>
+                <li><a href="" class="nav-link">TVs & Appliances</a></li>
+                <li><a href="" class="nav-link">Men</a></li>
+                <li><a href="" class="nav-link">Women</a></li>
+                <li><a href="" class="nav-link">Baby & Kids</a></li>
+                <li><a href="" class="nav-link">Home & Furniture</a></li>
+                <li><a href="" class="nav-link">Offer Zone</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- collapse -->
+
+    <div class="container p-5 mt-5">
+        <div class="card">
+            <div class="card-header"><button type="button" class="btn bg-primary text-white float-end border border-0" data-bs-toggle="collapse" data-bs-target="#btn1">View More >></button></div>
+
+            <div class="card-body">
+                <div class="collapse fade show" id="btn1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ullam nihil. Placeat error voluptatem illum accusamus in, ratione at ullam esse vero, recusandae tempora, sequi beatae! Repudiandae molestias est, veritatis nemo nostrum facilis labore delectus neque. Id nostrum sint saepe!</p>
+                </div>
+            </div>
+        </div>
+    
+
+        <!-- collpase in navbar tabs -->
+        
+        <ul class="nav nav-tabs mt-5">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="collapse" data-bs-target="#womens-jeans" aria-current="page" href="#womens-jeans">Women's jeans</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#womens-tops" aria-current="page" href="#womens-tops">Women's tops</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Women's Dresses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Women's Saree</a>
+            </li>
+        </ul>
+
+        <!-- Women's Jeans tab-->
+
+        <div id="womens-jeans" class="collapse show fade" data-bs-dismiss="collapse">
+            <div class="row">
+                <div class="col-md-3 mt-2 ms-3 shadow p-5">
+                    <img src="./image/jeans/jeans1.webp" class="img-fluid w-75 h-50">
+                    <p><b>Womens Denim jeans</b></p>
+                    <p><b>Price</b> Rs <del>650</del>450</p>
+                    <p> <span class="bi bi-star-fill        text-success"></span>
+                        <span class="bi bi-star-fill text-success"></span>
+                        <span class="bi bi-star-fill text-success"></span>
+                        <span class="bi bi-star-fill text-success"></span>
+                        <span class="bi bi-star-half text-success"></span>
+                    </p>
+                    <p><button type="button" class="btn btn-block w-100 bg-success text-white">Add To Cart</button></p>
+                </div>
+
+                <div class="col-md-3 mt-2 ms-5 shadow p-5">
+                    <img src="./image/jeans/jeans2.webp" class="img-fluid w-75 h-50">
+                    <p><b>Womens Denim jeans</b></p>
+                    <p><b>Price</b> Rs <del>650</del>450</p>
+                    <p> <span class="bi bi-star-fill        text-success"></span>
+                        <span class="bi bi-star-fill text-success"></span>
+                        <span class="bi bi-star-fill text-success"></span>
+                        <span class="bi bi-star-fill text-success"></span>
+                        <span class="bi bi-star-half text-success"></span>
+                    </p>
+                    <p><button type="button" class="btn btn-block w-100 bg-success text-white">Add To Cart</button></p>
+                </div>
+
+                <div class="col-md-3 mt-2 ms-5 shadow p-5">
+                    <img src="./image/jeans/jeans3.webp" class="img-fluid w-75 h-50">
+                    <p><b>Womens Denim jeans</b></p>
+                    <p><b>Price</b> Rs <del>650</del>450</p>
+                    <p> <span class="bi bi-star-fill        text-success"></span>
+                        <span class="bi bi-star-fill text-success"></span>
+                        <span class="bi bi-star-fill text-success"></span>
+                        <span class="bi bi-star-fill text-success"></span>
+                        <span class="bi bi-star-half text-success"></span>
+                    </p>
+                    <p><button type="button" class="btn btn-block w-100 bg-success text-white">Add To Cart</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- login modal load here -->
+    <div class="modal fade" id="login" role="dialog">
+        <div class="modal-dialog" style="min-width: 45%">
+            <div class="modal-content m-0">
+                <div class="row">
+                    <!-- grid part-1 -->
+                    <div class="col-md-5 bg-primary p-5">
+                        <ul class="bg-primary login-link">
+                            <li><a href="">24x7 srvices</a></li>
+                            <li><a href="">Return Policy</a></li>
+                            <li><a href="">24x7 customer support</a></li>
+                            <li><a href="">Call Us</a></li>
+                        </ul>
+                        <img src="https://ps.w.org/user-login-magic-links/assets/icon-256x256.png?rev=2482110" class="w-100 ms-2">
+                    </div>
+                    <!-- grid part -2-->
+                    <div class="col-md-7 bg-white p-5">
+                        <h4 class="text-center">Login Form <button type="button" class="btn btn-sm bg-primary text-white border border-0 float-end" data-bs-dismiss="modal">&times;</button></h4>
+                        <form method="post">
+                            <div class="inout-group mt-2">
+                                <input type="text" name="email" placeholder="Email *" class="form-control">
+                            </div>
+
+                            <div class="inout-group mt-2">
+                                <input type="password" name="pass" placeholder="Password *" class="form-control">
+                            </div>
+
+                            <div class="inout-group mt-2">
+                                <input type="submit" name="sub" class="btn btn-sm btn-primary" value="SignIn"><br><br>
+                                <b><a href="" class="ms-0">Forget Password ?</a></b><br><br>
+                            </div>
+
+                            <div class="inout-group mt-2">
+                                <p class="fs-6">Don't have an account ? <br><br><a href="">Create account ?</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- empty cart modal load here -->
+
+    <div class="modal fade" id="crt" role="dialog">
+        <div class="modal-dialog" style="min-width: 50%;">
+            <div class="modal-content p-5">
+                <center>
+                    <button type="button" class="btn btn-sm bg-primary text-white border border-0 float-end" data-bs-dismiss="cart">&times</button>
+                    <img src="./image/cart.webp" class="w-50 h-50 img-fluid">
+                    <h2>Missing Cart items?</h2>
+                    <p>Login to see the items you added previously</p>
+                    <button type="button" class="btn btn-lg bg-primary text-white" data-bs-toggle="modal" data-bs-target="#login" data-bs-dismiss="modal">Login</button>
+                </center>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
