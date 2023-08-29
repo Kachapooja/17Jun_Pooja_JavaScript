@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <title>Que-9</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+        <button type="button" style="margin-left: 5%;">
+            <a href="../Que-8/index.html">Prew</a></button>
+        <button type="button" style="margin-left: 80%;">
+            <a href="../Que-10/index.html">Next</a></button>
+
+
+    <!-- Que : 9 Start -->
+
+    <div class="container-fluid">
+        <span class="dot">Que-9</span>
+        <span class="dot dot1">In Bootstrap 4, what is flexbox?</span>
+        
+        <!-- Que : 9 Ans -->
+        
+        <div class="detail">
+           
+            <p>&nbsp;In Bootstrap 4, flex box is used to control the layout and alignment specification of components.</p>
+
+            <p>&nbsp;Flexbox makes easier to design flexible responsive layout structures without using float or positioning attributes.</p>
+
+            <p>&nbsp;In Bootstrap 4, if we need to add <u>display: flex</u> to an element, do so with <u>.d-flex</u> </p>
+
+            <p>&nbsp;In Bootstrap 4, if we need class or display value to allow the use of extra flexbox utilities for sizing, alignment, spacing, and many more.</p>
+
+
+                                    <!--          flex auto margin            -->
+            
+            <p class=" head text-warning text-decoration-underline">&nbsp;Example:("flex-auto-margin")</p>
+
+            <div class="d-flex bg-secondary bg-secondary text-white">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div><br>
+            <div class="d-flex mb-3 bg-secondary text-white">
+                <div class="p-2 me-auto bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+              </div>
+              <div class="d-flex mb-3 bg-secondary text-white">
+                <div class="p-2  bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 ms-auto bg-primary">Flex item 3</div>
+              </div><br>
+              
+                        <!--      flex inline       -->
+
+            <p class=" head text-warning text-decoration-underline">&nbsp;Example:("d-inline-flex")</p>
+
+            <div class="d-inline-flex p-3 bg-secondary text-white">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div><br><br>
+
+                        <!--       flex-row  &  flex-row-reverse       -->
+
+            <p class=" head text-warning text-decoration-underline">&nbsp;Example:("flex-row  &  flex-row-reverse")</p>
+
+            <div class="d-flex flex-row bg-secondary">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div><br>
+              
+            <div class="d-flex flex-row-reverse bg-secondary">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div><br>
+            
+                            <!--       flex-column  &  flex-column-reverse       -->
+            
+            <p class=" head text-warning text-decoration-underline">&nbsp;Example:("flex-column  &  flex-column-reverse")</p>
+
+            <div class="d-flex flex-column">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div><br>
+              
+            <div class="d-flex flex-column-reverse">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div><br>  
+               
+                             <!--       justify-content-(start/end/center/between/around)      -->
+
+            <p class=" head text-warning text-decoration-underline">&nbsp;Example:("justify-content-(start/end/center/between/around")</p>
+
+            <div class="d-flex justify-content-start bg-secondary mb-3">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+            <div class="d-flex justify-content-end bg-secondary mb-3">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+            <div class="d-flex justify-content-center bg-secondary mb-3">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+            <div class="d-flex justify-content-between bg-secondary mb-3">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+            <div class="d-flex justify-content-around bg-secondary mb-3">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div><br>
+
+
+                            <!--       flex-fill ,flex-grow ,flex-shrink(order)      -->
+
+            <p class=" head text-warning text-decoration-underline">&nbsp;Example:("flex-fill ,flex-grow ,flex-shrink(order)")</p>
+
+            <div class="d-flex">
+                <div class="p-2 bg-info flex-fill">Flex item 1</div>
+                <div class="p-2 bg-warning flex-fill">Flex item 2</div>
+                <div class="p-2 bg-primary flex-fill">Flex item 3</div>
+            </div><br>
+            <div class="d-flex">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary flex-grow-1">Flex item 3</div>
+            </div><br>
+            <div class="d-flex bg-secondary">
+                <div class="p-2 bg-info order-3">Flex item 1</div>
+                <div class="p-2 bg-warning order-2">Flex item 2</div>
+                <div class="p-2 bg-primary order-1">Flex item 3</div>
+            </div><br>
+
+                            <!--       flex-wrap/wrap-reverse/nowrap      -->
+            
+            <p class=" head text-warning text-decoration-underline">&nbsp;Example:("flex-wrap/wrap-reverse/nowrap")</p>
+
+            <div class="d-flex flex-wrap bg-secondary " style="width: 1100px;">
+                <div class="p-2  bg-dark border">Flex item 1</div>
+                <div class="p-2  bg-info border">Flex item 2</div>
+                <div class="p-2  bg-warning border">Flex item 3</div>
+                <div class="p-2  bg-danger border">Flex item 4</div>
+                <div class="p-2  bg-success border">Flex item 5</div>
+                <div class="p-2  bg-primary border">Flex item 6</div>
+                <div class="p-2  bg-dark border">Flex item 7</div>
+                <div class="p-2  bg-info border">Flex item 8</div>
+                <div class="p-2  bg-warning border">Flex item 9</div>
+                <div class="p-2  bg-danger border">Flex item 10</div>
+                <div class="p-2  bg-success border">Flex item 11</div>
+                <div class="p-2  bg-primary border">Flex item 12</div>
+                <div class="p-2  bg-dark border">Flex item 13</div>
+                <div class="p-2  bg-info border">Flex item 14</div>
+            </div><br>
+            <div class="d-flex flex-wrap-reverse bg-secondary" style="width: 1100px;">
+                <div class="p-2  bg-dark border">Flex item 1</div>
+                <div class="p-2  bg-info border">Flex item 2</div>
+                <div class="p-2  bg-warning border">Flex item 3</div>
+                <div class="p-2  bg-danger border">Flex item 4</div>
+                <div class="p-2  bg-success border">Flex item 5</div>
+                <div class="p-2  bg-primary border">Flex item 6</div>
+                <div class="p-2  bg-dark border">Flex item 7</div>
+                <div class="p-2  bg-info border">Flex item 8</div>
+                <div class="p-2  bg-warning border">Flex item 9</div>
+                <div class="p-2  bg-danger border">Flex item 10</div>
+                <div class="p-2  bg-success border">Flex item 11</div>
+                <div class="p-2  bg-primary border">Flex item 12</div>
+                <div class="p-2  bg-dark border">Flex item 13</div>
+                <div class="p-2  bg-info border">Flex item 14</div>
+            </div><br>
+            <div class="d-flex flex-nowrap bg-secondary" style="width: 1100px; height: 100px;">
+                <div class="p-2  bg-dark border">Flex item 1</div>
+                <div class="p-2  bg-info border">Flex item 2</div>
+                <div class="p-2  bg-warning border">Flex item 3</div>
+                <div class="p-2  bg-danger border">Flex item 4</div>
+                <div class="p-2  bg-success border">Flex item 5</div>
+                <div class="p-2  bg-primary border">Flex item 6</div>
+            </div><br>
+
+                             <!--       align-items-start/end/center/baseline/strec      -->
+
+            <p class=" head text-warning text-decoration-underline">&nbsp;Example:("align-items-start/end/center/baseline/strech")</p>
+
+            <div class="d-flex align-items-start bg-secondary" style="height:100px">
+                <div class="p-2  bg-info border">Flex item 1</div>
+                <div class="p-2 bg-warning border">Flex item 2</div>
+                <div class="p-2 bg-primary border">Flex item 3</div>
+            </div><br>
+            <div class="d-flex align-items-end bg-secondary" style="height:100px">
+                <div class="p-2 bg-info border">Flex item 1</div>
+                <div class="p-2 bg-warning border">Flex item 2</div>
+                <div class="p-2 bg-primary border">Flex item 3</div>
+            </div><br>
+            <div class="d-flex align-items-center bg-secondary" style="height:100px">
+                <div class="p-2 bg-info border">Flex item 1</div>
+                <div class="p-2 bg-warning border">Flex item 2</div>
+                <div class="p-2 bg-primary border">Flex item 3</div>
+            </div><br>
+            <div class="d-flex align-items-baseline bg-secondary" style="height:100px">
+                <div class="p-2 bg-info border">Flex item 1</div>
+                <div class="p-2 bg-warning border">Flex item 2</div>
+                <div class="p-2 bg-primary border">Flex item 3</div>
+            </div><br>
+            <div class="d-flex align-items-stretch bg-secondary" style="height:100px">
+                <div class="p-2 bg-info border">Flex item 1</div>
+                <div class="p-2 bg-warning border">Flex item 2</div>
+                <div class="p-2 bg-primary border">Flex item 3</div>
+            </div><br>
+        </div>
+    </div>
+</body>
+</html>

@@ -6,10 +6,10 @@
 body{
     background-color:#645752;
 }
-.container{
+.container-fluid{
     background-color: black;
-    color: #fff;
     border: 1px solid black;
+    color: #fff;
     height: 1100px;
     width: 90%;
     margin: auto;
@@ -40,16 +40,20 @@ body{
     font-size: 19px;
     margin-left: 2%;
 }
-li::before{
+/* li::before{
     content: "\00BB";
-    color:darkblue;
-}
-li{
+    color:rgb(218, 75, 182);
+} */
+/* li{
     list-style: none;
+} */
+p::before{
+    content: "\00BB";
+    color:rgb(218, 75, 182);
 }
 a{
     text-decoration: none;
-    color:#fff !important ; 
+    color:#fff !important ;
 }
 button{
     padding: 10px;

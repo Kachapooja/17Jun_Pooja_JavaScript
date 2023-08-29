@@ -6,11 +6,11 @@
 body{
     background-color:#645752;
 }
-.container{
+.container-fluid{
     background-color: black;
-    color: #fff;
     border: 1px solid black;
-    height: 1100px;
+    color: #fff;
+    height: 800px;
     width: 90%;
     margin: auto;
     margin-top: 2.5%;
@@ -40,16 +40,21 @@ body{
     font-size: 19px;
     margin-left: 2%;
 }
-li::before{
+/* li::before{
     content: "\00BB";
-    color:darkblue;
-}
+    color:rgb(218, 75, 182);
+} */
 li{
-    list-style: none;
+    list-style: circle;
 }
+p::before{
+    content: "\00BB";
+    color:rgb(218, 75, 182);
+}
+
 a{
     text-decoration: none;
-    color:#fff !important ; 
+    color:#fff !important ;
 }
 button{
     padding: 10px;
