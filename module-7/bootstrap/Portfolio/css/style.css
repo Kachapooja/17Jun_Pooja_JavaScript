@@ -178,16 +178,36 @@ p{
 
 /* contact section start */
 
-.contact-content{
+.container-fluid{
     position: relative;
-    height: 700px;
+    height: 600px;
     background-color: #2a2b2b;
 }
 .add-content{
     margin-left: 35%;
 }
+#bt{
+   border-radius: 5px;
+   border: none;
+   height: 49px;
+   margin-top: 5px !important;
+}
 
 /* contact section end */
+
+footer{
+    position: relative;
+    height: 415px;
+    background-color: #0c0c0c; 
+    
+}
+.icons a:hover{
+  color: #a7b902 !important;
+  border-color: aqua !important; 
+}
+.navbar-footer li{
+    list-style: none;
+}
 
 
 
