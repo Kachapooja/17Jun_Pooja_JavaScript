@@ -9,14 +9,7 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./js/min.js"></script>
-    <script>
-        $(document).ready(function(){
-
-            $('#date-picker').datepicker();
-
-        });
-    </script>
-
+   
     <!-- Bootstrap CSS CDN  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/bootstrap-datepicker.min.css">
@@ -37,13 +30,13 @@
 
         <h1 class="text-center text-danger text-decoration-underline" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Form Validation</h1>
         
-        <form id="frm">
+        <form id="frm" name="frm" onsubmit="return valid(this.value)">
             <label>First Name:</label>
-            <input type="text" name="name" id="fname" placeholder="Enter your first name" required pattern="[a-z,A-Z]" style="width: 300px; margin-left: 60px;">
+            <input type="text" name="name" id="fname" placeholder="Enter your first name"  style="width: 300px; margin-left: 60px;">
             <br><br>
 
             <label>Last Name:</label>
-            <input type="text" name="name" id="lname" placeholder="Enter your last name" required pattern="[a-z,A-Z]" style="width: 300px; margin-left: 62px;">
+            <input type="text" name="name" id="lname" placeholder="Enter your last name"  style="width: 300px; margin-left: 62px;">
             <br><br>
 
             <label>Email:</label>
@@ -51,39 +44,39 @@
             <br><br>
 
             <label>Mobile:</label>
-            <input type="tel" name="phone" id="phn" required pattern="[0-9]" maxlength="10" style="width: 300px; margin-left: 95px;">
+            <input type="tel" name="phn" id="phn"  style="width: 300px; margin-left: 95px;">
             <br><br>
 
             <label>Gender:</label>
-            <input type="radio" name="gender"  id="gndr" style="margin-left: 89px;">Male
-            <input type="radio" name="gender" id="gndr" >Female
+            <input type="radio" name="gndr"  id="gndr" style="margin-left: 89px;">Male
+            <input type="radio" name="gndr" id="gndr" >Female
             <br><br>
 
             <label>Date Of Birth:</label>
-            <div class="row border border-1 border-secondary bg-white" id="brthdt" style="width: 300px; margin-left: 160px; margin-top: -30px;">
-                <input type="text" placeholder="mm/dd/yy "  class="form-control col-md-9 border border-0 w-75"  required id="date-picker" >
+            <div class="row border border-1 border-secondary bg-white"  style="width: 300px; margin-left: 160px; margin-top: -30px;">
+                <input type="text" placeholder="mm/dd/yy " id="brthdt"  class="form-control col-md-9 border border-0 w-75"   id="date-picker" >
                 <i class="bi bi-calendar-check-fill text-dark col-md-2 mt-2 float-end"></i>
             </div>
             <br><br>
 
             <label>Address:</label>
-            <textarea name="" id="add" cols="10" rows="6" style="width: 300px; margin-left: 82px;"></textarea>
+            <textarea name="add" id="add" cols="10" rows="6" style="width: 300px; margin-left: 82px;"></textarea>
             <br><br>
 
             <label>City:</label>
-            <input type="text" name="city" id="cty" required pattern="[a-z,A-Z]" style="width: 300px; margin-left: 117px;">
+            <input type="text" name="cty" id="cty"  style="width: 300px; margin-left: 117px;">
             <br><br>
 
             <label>Area PIN:</label>
-            <input type="text" name="" id="pin" required pattern="[0-9]" maxlength="6" style="width: 300px; margin-left: 79px;">
+            <input type="text" name="pin" id="pin"  style="width: 300px; margin-left: 79px;">
             <br><br>
 
             <label>State:</label>
-            <input type="text" name="" id="stat" required pattern="[a-z,A-Z]" style="width: 300px; margin-left: 107px;">
+            <input type="text" name="stat" id="stat"  style="width: 300px; margin-left: 107px;">
             <br><br>
 
             <label>Qualification:</label>
-            <select name="" id="quali" style="width: 300px; margin-left: 43px;">
+            <select name="quali" id="quali" style="width: 300px; margin-left: 43px;">
                 <option value="">Select Qualification</option>
                 <option value="">B.B.A</option>
                 <option value="">M.B.A</option>
@@ -96,17 +89,17 @@
             <br><br>
 
             <label>Specialization:</label>
-            <input type="checkbox" name="course" id="splztn" style="margin-left: 35px;">Computer Scienece <br>
-            <input type="checkbox" name="course" id="splztn" style="margin-left: 160px;">Information Technology <br>
-            <input type="checkbox" name="course" id="splztn" style="margin-left: 160px;">Computer Architecture <br>
-            <input type="checkbox" name="course" id="splztn" style="margin-left: 160px;">Tele Communication <br>
+            <input type="checkbox" name="splztn" id="splztn" style="margin-left: 35px;">Computer Scienece <br>
+            <input type="checkbox" name="splztn" id="splztn" style="margin-left: 160px;">Information Technology <br>
+            <input type="checkbox" name="splztn" id="splztn" style="margin-left: 160px;">Computer Architecture <br>
+            <input type="checkbox" name="splztn" id="splztn" style="margin-left: 160px;">Tele Communication <br>
             <br><br>
 
             <label>Password:</label>
-            <input type="password" name="" id="pass" required pattern="[0-9,@,a-z]" style="width: 300px; margin-left: 56px;">
+            <input type="password" name=""pass id="pass"  style="width: 300px; margin-left: 56px;">
             <br><br>
 
-            <button type="submit" id="" onclick="valid()" style="color: white; background-color: green; border: none; padding: 10px; border-radius: 3px;">Registered</button>
+            <button type="submit" id=""  style="color: white; background-color: green; border: none; padding: 10px; border-radius: 3px;">Registered</button>
             
         </form>
     </div>
