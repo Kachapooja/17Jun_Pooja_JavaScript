@@ -14,6 +14,9 @@ body{
     overflow-x: hidden;
     box-sizing: border-box;
 }
+.container-fluid{
+    /* margin-left: 10px; */
+}
 
 /* header start here */
 
@@ -44,6 +47,11 @@ body{
 }
 .img-fluid{
     margin-left: 180px ;
+}
+.tt{
+    margin-top: 5px;
+    height: 60px;
+    width: 70px;
 }
 .col-md-3{
     position: absolute;
@@ -131,6 +139,7 @@ hr {
     text-align: center;
     text-transform: uppercase;
     position: relative;
+    animation: infinite 3s heartBeat;
 }
 .text3{   
     font-size: 38px;
@@ -139,8 +148,9 @@ hr {
     font-family: "roboto";
     text-transform: uppercase;
     position: absolute;
-    left: 582px;
+    left: 592px;
     top: 695px;
+    animation: infinite 5s backInLeft;
 }
 .text4{
     margin-left: 350px;
@@ -157,12 +167,23 @@ hr {
     color: #3d5f00;
 }
 .imgg{
-    height: 350px;
-    width: 550px;
+    height: 350px ;
+    width: 550px ;
+    background-image: url('../images/image1.png');
+    background-size: 550px 350px ;
+    position: relative ; 
     margin-left: 150px;
     margin-top: -140px;
-    object-fit: cover;
     border: 1px solid black;
+}
+.imgg:after
+{
+    content: "";
+    background-color: #3d5f00;
+    opacity: 0.5;
+    position: absolute ;
+    left: 0; right: 0;
+    top: 0; bottom: 0;    
 }
 .imgg1{
     margin-top: -135px ;
@@ -178,8 +199,8 @@ hr {
     color: red;
     font-size: 50px;
     position: absolute;
-    left: 72%;
-    justify-content: center;
+    left: 45%;
+    top: 140px;
 }
 .content2{
     margin-top: 150px;
@@ -187,8 +208,7 @@ hr {
     color: #3d5f00;
 }
 .icons{
-    left: 22%;
-    justify-content: center;
+    left: 40%;
 }
 
 
@@ -260,6 +280,9 @@ hr {
     position: absolute;
     top: 25px;
 }
+.pricing-box{
+    animation: infinite 5s fadeOutDown;
+}
 .main-part{
     width: 400px;
     height: 500px;
@@ -306,8 +329,229 @@ hr {
 .blog-content .tt6{
     position: absolute;
     top: 25px;
-    margin-left: 25px;
+    margin-left: 35px;
+}
+.blog-img{
+    margin-left: 10px;
 }
 .blog{
     background-color: #f1f1f1;
+    color: #3d5f00;
+    animation: alternate-reverse 5s flip;
+}
+.imgg2{
+    animation: alternate-reverse 5s flip;
+}
+
+/* footer section */
+
+.footer{
+    background-color: #3d5f00;
+    height: 330px;
+    margin-left: -12px;
+    width: 1358px;
+    color: #fff;
+    text-align: center; 
+    margin-top: 100px;
+    animation: alternate-reverse 5s rubberBand;
+}
+.dot-icon{
+    margin-top: 180px;
+}
+/* .triangle-left{
+    width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #608b14;
+	border-bottom: 25px solid transparent;
+    margin-top: 30px;
+    margin-left: 150px;
+    
+} 
+.triangle-left1{
+  width: 45px; 
+  height: 45px; 
+  border:dashed 2px white;
+  border-radius: 0px 0px 0px 120px;
+  transform: rotate(-135deg);
+  margin-top: -22px;
+  margin-left: 25px; 
+	
+} */
+.imgg3{
+    margin-top: -20px;
+    height: 70px;
+    width: 80px;
+}
+.footer-text{
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-size: 40px;
+    letter-spacing: 2px;
+} 
+h4{
+    font-size: 30px;
+    font-weight: 300;
+}
+.icons1{
+    margin-top: 20px;
+}
+h3{
+    margin-top: 10px;
+    font-weight: 500;
+}
+.dot{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color:#608b14;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.dot1{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px dashed white;
+    background: transparent;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+/* media query */
+
+@media only screen  and (max-width:480px){
+    .input-group{
+        width: 170px !important;
+        margin-left: -10px !important;
+    }
+    .tt{
+        margin-left: 190px;
+    }
+    .col-md-3{
+        left: 210px;
+        font-size: 16px !important;
+        margin-top: 15px !important;
+    }
+    .bi-heart ,.bi-cart{
+        font-size: 20px !important;
+    }
+    .login-link{
+        margin-left: 20px;
+    }
+    .bi-cart{
+        margin-left: -19px;
+    }
+    .text3{
+        position: absolute;
+        left: 150px;
+        top: 745px;
+    }
+    .text4{
+        margin-left: 60px;
+    }
+    .line{
+        margin-left: 0px !important;
+    }
+    .d-flex{
+       margin-top: -18px;
+       margin-left: 0px;
+    }
+    .imgg{
+        height: 350px ;
+        width: 380px ;
+        margin-left: 20px;
+        margin-top: -115px;
+    }
+    .imgg1{
+        margin-left: 20px;
+    }
+    .content2{
+        margin-top: 150px;
+        margin-left: 30px;
+        color: #3d5f00;
+    }
+    .content2 .col-md-5{
+        margin-top: 120px;
+    }
+    .service-content{
+        top: 50px;
+        left: 0px;
+    }
+    .service-text1 ,.service-text2 ,.service-text3{
+        margin-left: 20px;
+    }
+    .service-text .tt2{
+        margin-left: 195px;
+    }
+    .service-text1  .tt3{
+        margin-left: 0px !important;
+        width: 420px;
+    }
+    .service-text2  .tt3{
+        margin-left: 0px !important;
+        width: 420px;
+    }
+    .service-text3  .tt3{
+        margin-left: 0px !important;
+        width: 420px;
+    }
+    .special-discount{
+        margin-top: 100px;
+    }
+    .discount-img .tt4{
+        width: 100%;
+        height: 350px;
+        background-size: 100%;
+    }
+    .discount-text{
+        top: 20px;
+        left: 20px;
+    }
+    .discount-text h5{
+        display: none;
+    }
+    .discount-text h1{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .srt {
+        display: none;
+    }
+    .btn4{
+        margin-top: 150px;
+    }
+    .spl-dscnt{
+        margin-top: 90px;
+    }
+    .srt1{
+        display: none;
+    }
+    .discount1{
+        margin-left: 180px;
+    }
+    .blog{
+        width: 415px;
+        margin-left: 10px;
+    }
+    .btn6{
+        margin-bottom: 70px !important;
+    }
+    .footer{
+        height: 330px;
+        width: 480px;
+    }
+    .dot-icon{
+        margin-left: -190px;
+        margin-top: -100px;
+    }
+    .dot{
+        display: none;
+    }
+    .dot1{
+        display: none;
+    }
+    
 }
