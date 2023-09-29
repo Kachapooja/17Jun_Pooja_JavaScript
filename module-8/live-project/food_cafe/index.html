@@ -41,13 +41,12 @@
     
 <!-- food header start here -->
 
-<section class="container-fluid">
    
     <!-- food navigation bar start here -->
     <div class="header-content">
-    <div class="row ">
+    <div class="row">
         <div class="col-md-4">
-            <div class="input-group p-1 d-flex">
+            <div class="input-group">
                 <input type="text" name="search" placeholder="Search here" class="form-control  bg-transparent border-top-0 border-end-0 border-start-0">
                 <span class="input-group-text bg-transparent border-top-0 border-end-0 border-start-0 text-white"><i class="bi bi-search"></i></span>
             </div>
@@ -65,7 +64,7 @@
                 <span class="badge bg-success rounded-pill translate-middle" style="font-size: 12px;">1</span>
             </span>
             <span class="bi bi-cart fs-3 start-100 top-0 translate-middle text-white">
-                <span class="badge bg-success rounded-pill translate-middle" style="font-size: 12px;">1</span> 
+                <span class="badge bg-success rounded-pill translate-middle" style="font-size: 12px; margin-top: 10px;">1</span> 
             </span>
         </div>
     </div>
@@ -73,12 +72,16 @@
 
     <!-- navbar link -->
 
-    <nav class="navbar navbar-expand-md" data-aos="zoom-in" data-aos-easing="linear"
+    <!-- toggler -->
+    <!-- <button type="button" class="navbar-toggler bg-white collapsed" data-bs-toggole="collapse" data-bs-target="#coll" aria-expanded="false">
+        <i class="bi bi-grid-3x2-gap-fill"></i>
+    </button> -->
+    <nav class="navbar navbar-expand-md" id="coll" data-aos="zoom-in" data-aos-easing="linear"
     data-aos-duration="1500">
         <ul class="navbar-link">
             <li><a href="#Home" class="nav-item active">Home</a></li>
             <li><a href="#About" class="nav-item page-scroll">About us</a></li>
-            <li><a href="#service" class="nav-item page-scroll">Service</a></li>
+            <li><a href="#Service" class="nav-item page-scroll">Service</a></li>
             <li><a href="#Pricing" class="nav-item page-scroll">Pricing</a></li>
             <li><a href="#Blog" class="nav-item page-scroll">Blog</a></li>
             <li><a href="contact.html" class="nav-item page-scroll">Contact</a></li>
@@ -106,7 +109,8 @@
         <div class="banner-text">
             <h1 class="text2">About us</h1>
             <h4 class="text3">about us</h4>
-            <p class="text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur recusandae quos nam neque <br class="test">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ratione omnis accusamus laborum adipisci error unde.</p>
+            <p class="text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur recusandae quos nam neque</p> 
+            <p class="text4-1">ratione omnis accusamus laborum adipisci error unde.</p>
         </div>
 
         <!-- content-1 section -->
@@ -127,7 +131,7 @@
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                     <hr class="line w-25 ms-0">
-                    <div class="d-flex h-50 border border-1 border-top-0 border-bottom-0 border-end-0">
+                    <div class="d-flex border border-1 border-top-0 border-bottom-0 border-end-0">
                         <div class="vr"></div>
                     </div>
                     <div  class="imgg">
@@ -142,7 +146,7 @@
         <div class="content2">
             <div class="row">
 
-                <div class="col-md-7" data-aos="flip-left"
+                <div class="col-md-7 vd1" data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                     <hr class="line w-25 ms-0">
@@ -174,8 +178,8 @@
         <div class="banner-text">
             <h1 class="text2">service</h1>
             <h4 class="text3 tt1">service</h4>
-            <p class="text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur recusandae quos nam neque <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ratione omnis accusamus laborum adipisci error unde.</p>
-        </div>
+            <p class="text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur recusandae quos nam neque</p> 
+            <p class="text4-1">ratione omnis accusamus laborum adipisci error unde.</p>
         <div class="service-text">
 
             <!-- service text1  -->
@@ -253,12 +257,13 @@
         
     <!-- pricing section -->
 
-    <section class="pricing-content">
+    <section class="pricing-content" id="Pricing">
         <div class="banner-text">
             <h1 class="text2">pricing</h1>
             <h4 class="text3 tt5">pricing</h4>
-            <p class="text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur recusandae quos nam neque <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ratione omnis accusamus laborum adipisci error unde.</p>
-        </div>
+            <p class="text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur recusandae quos nam neque</p> 
+            <p class="text4-1">ratione omnis accusamus laborum adipisci error unde.</p>
+        </div>     
         <div class="pricing-box">
             <div class="row">
                 <div class="col-md-4 main-part">
@@ -321,11 +326,12 @@
 
     <!-- blog section -->
 
-    <section class="blog-content">
+    <section class="blog-content" id="Blog">
         <div class="banner-text">
             <h1 class="text2">blog</h1>
             <h4 class="text3 tt6">blog</h4>
-            <p class="text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur recusandae quos nam neque <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ratione omnis accusamus laborum adipisci error unde.</p>
+            <p class="text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur recusandae quos nam neque</p> 
+            <p class="text4-1">ratione omnis accusamus laborum adipisci error unde.</p>
         </div>
 
         <!-- blog-content section -->
@@ -336,7 +342,7 @@
                    <img src="./images/blog1.png" alt="" class="imgg2"> 
                 </div>
                 <div class="col-md-4 blog">
-                    <h3 class="mt-4">Eat food. Not too much  <br>mostly plants.</h3>
+                    <h3 class="mt-4" style="height: 70px;">Eat food. Not too much  <br>mostly plants.</h3>
                     <p class="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem totam minima, voluptatem libero dignissimos aut! Eos, veniam doloremque! Recusandae, dolore.</p>
                     <button type="button" class="btn btn6 mt-4">read more</button>
                 </div>
@@ -360,17 +366,19 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 log">
                     <img src="./images/logo.png" alt="" class="imgg3">
-                    <h2 class="footer-text">american food</h2>
-                    <h4>The Best Taste Food</h4>
-                    <div class="icons1">
-                        <i class="bi bi-instagram"></i>&emsp;
-                        <i class="bi bi-facebook"></i>&emsp;
-                        <i class="bi bi-twitter"></i>&emsp;
-                        <i class="bi bi-whatsapp"></i>
+                    <div class="test1">
+                        <h2 class="footer-text">american food</h2>
+                        <h4>The Best Taste Food</h4>
+                        <div class="icons1">
+                            <i class="bi bi-instagram"></i>&emsp;
+                            <i class="bi bi-facebook"></i>&emsp;
+                            <i class="bi bi-twitter"></i>&emsp;
+                            <i class="bi bi-whatsapp"></i>
+                        </div>
+                        <h3>yourwebsite.com</h3>
                     </div>
-                    <h3>yourwebsite.com</h3>
                 </div>
             
                 <div class="col-md-4">
@@ -385,7 +393,7 @@
     </section>
     <hr>
 
-</section>
+
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

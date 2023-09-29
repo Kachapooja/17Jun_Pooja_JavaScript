@@ -7,15 +7,19 @@
     src: url('../fonts/roboto/Roboto-Bold.ttf');
 }
 
-
-body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    box-sizing: border-box;
+*
+{
+    overflow-x: hidden !important;   
 }
-.container-fluid{
-    /* margin-left: 10px; */
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+html ul li 
+{
+    margin:0 !important;
+    padding:0 !important;
 }
 
 /* header start here */
@@ -130,6 +134,9 @@ hr {
     border-radius: 25px 1px;
     margin-left: 10px;
 }
+.btn:hover{
+    color: white;
+}
 .text2{
     opacity: 0.3;
     font-size: 80px;
@@ -143,6 +150,7 @@ hr {
 }
 .text3{   
     font-size: 38px;
+    height: 70px;
     color: #3d5f00;
     font-weight: 700;
     font-family: "roboto";
@@ -155,6 +163,9 @@ hr {
 .text4{
     margin-left: 350px;
 }
+.text4-1{
+    text-align: center;
+}
 
 /* about section start */
 
@@ -166,14 +177,18 @@ hr {
     margin-left: 30px;
     color: #3d5f00;
 }
+.vd ,.vd1{
+    height: 400px;
+}
+
 .imgg{
     height: 350px ;
     width: 550px ;
     background-image: url('../images/image1.png');
-    background-size: 550px 350px ;
+    background-size: 100% 100% ;
     position: relative ; 
     margin-left: 150px;
-    margin-top: -140px;
+    margin-top: -125px;
     border: 1px solid black;
 }
 .imgg:after
@@ -181,19 +196,21 @@ hr {
     content: "";
     background-color: #3d5f00;
     opacity: 0.5;
-    position: absolute ;
+    position: absolute;
     left: 0; right: 0;
     top: 0; bottom: 0;    
 }
 .imgg1{
-    margin-top: -135px ;
+    margin-top: -175px;
 }
 .line{
     margin-left: 120px !important;
+    /* height: auto; */
 }
 .d-flex{
    margin-top: -16px;
    margin-left: 120px;
+   height: 150px;
 }
 .bi-youtube{
     color: red;
@@ -209,6 +226,9 @@ hr {
 }
 .icons{
     left: 40%;
+}
+.txt1{
+    height: 80px;
 }
 
 
@@ -248,7 +268,7 @@ hr {
 }
 .discount-img .tt4{
     width: 100%;
-    height: 350px;
+    height: 380px;
     margin-left: 0px;
     background-size: cover;
     border: 1px solid;   
@@ -256,18 +276,23 @@ hr {
 .discount-text{
     color: #3d5f00;
     position: absolute;
-    top: 30px;
+    top: 20px;
     left: 20px;
+}
+.discount-text h4{
+    height: 38px;
 }
 .discount-text h5{
     font-weight: 300;
     letter-spacing: 11px;
     text-transform: uppercase;
     font-family: 'Roboto';
+    height: 28px;
 }
 .discount-text h1{
     text-transform: uppercase;
     font-family: 'Roboto';
+    height: 50px;
 }
 
 /* pricing start */
@@ -281,11 +306,11 @@ hr {
     top: 25px;
 }
 .pricing-box{
-    animation: infinite 5s fadeOutDown;
+    animation: infinite 5s flash;
 }
 .main-part{
     width: 400px;
-    height: 500px;
+    height: 503px;
     margin-left: 35px;
 }
 .part1{
@@ -333,65 +358,51 @@ hr {
 }
 .blog-img{
     margin-left: 10px;
+    /* height: 460px; */
 }
 .blog{
     background-color: #f1f1f1;
     color: #3d5f00;
-    animation: alternate-reverse 5s flip;
+    animation: infinite 5s fadeInTopLeft;
 }
 .imgg2{
-    animation: alternate-reverse 5s flip;
+    animation: infinite 5s fadeInTopLeft;
 }
 
 /* footer section */
 
 .footer{
     background-color: #3d5f00;
-    height: 330px;
-    margin-left: -12px;
+    position: relative;
+    height: 300px;
+    /* margin-left: -12px; */
     width: 1358px;
     color: #fff;
     text-align: center; 
     margin-top: 100px;
-    animation: alternate-reverse 5s rubberBand;
+    /* animation: alternate-reverse 5s rubberBand; */
 }
 .dot-icon{
     margin-top: 180px;
 }
-/* .triangle-left{
-    width: 0;
-	height: 0;
-	border-top: 25px solid transparent;
-	border-right: 50px solid #608b14;
-	border-bottom: 25px solid transparent;
-    margin-top: 30px;
-    margin-left: 150px;
-    
-} 
-.triangle-left1{
-  width: 45px; 
-  height: 45px; 
-  border:dashed 2px white;
-  border-radius: 0px 0px 0px 120px;
-  transform: rotate(-135deg);
-  margin-top: -22px;
-  margin-left: 25px; 
-	
-} */
+.log{
+    margin-top: 20px;
+}
 .imgg3{
-    margin-top: -20px;
-    height: 70px;
+    height: 80px;
     width: 80px;
 }
 .footer-text{
     font-family: 'Roboto';
     text-transform: uppercase;
-    margin-top: 15px;
+    margin-top: 25px;
+    height: 50px;
     font-size: 40px;
     letter-spacing: 2px;
 } 
 h4{
     font-size: 30px;
+    height: 45px;
     font-weight: 300;
 }
 .icons1{
@@ -400,6 +411,7 @@ h4{
 h3{
     margin-top: 10px;
     font-weight: 500;
+    height: 45px;
 }
 .dot{
     display: inline-block;
@@ -411,21 +423,30 @@ h3{
 }
 .dot1{
     display: inline-block;
+    position: absolute;
     height: 30px;
     width: 30px;
     border-radius: 50%;
     border: 2px dashed white;
     background: transparent;
-    margin-left: 10px;
+    margin-left: -5px;
     margin-top: 2px;
 }
 
 /* media query */
 
 @media only screen  and (max-width:480px){
+    
+
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
     .input-group{
         width: 170px !important;
-        margin-left: -10px !important;
+        margin-left: 0px !important;
+        margin-top: -10px;
     }
     .tt{
         margin-left: 190px;
@@ -439,7 +460,7 @@ h3{
         font-size: 20px !important;
     }
     .login-link{
-        margin-left: 20px;
+        margin-left: 15px;
     }
     .bi-cart{
         margin-left: -19px;
@@ -451,6 +472,10 @@ h3{
     }
     .text4{
         margin-left: 60px;
+        justify-content: center;
+    }
+    .text4-1{
+        display: none;
     }
     .line{
         margin-left: 0px !important;
@@ -463,13 +488,14 @@ h3{
         height: 350px ;
         width: 380px ;
         margin-left: 20px;
-        margin-top: -115px;
+        margin-top: -130px;
     }
     .imgg1{
         margin-left: 20px;
+        margin-top: -180px;
     }
     .content2{
-        margin-top: 150px;
+        margin-top: 10px;
         margin-left: 30px;
         color: #3d5f00;
     }
@@ -536,6 +562,9 @@ h3{
         width: 415px;
         margin-left: 10px;
     }
+    .blog-img{
+        margin-left: 30px;
+    }
     .btn6{
         margin-bottom: 70px !important;
     }
@@ -547,11 +576,14 @@ h3{
         margin-left: -190px;
         margin-top: -100px;
     }
-    .dot{
+    .log{
+       margin-top: -45px;
+       position: absolute;
+       top: 50px !important;
+    }
+    .dot ,.dot1{
         display: none;
     }
-    .dot1{
-        display: none;
-    }
+    
     
 }
