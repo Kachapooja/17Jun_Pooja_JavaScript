@@ -46,3 +46,6 @@ html{
 .navbar-link a:hover{
     color: #c1d31c;
 }
+.bg-set-color{
+    background-color: #fa7c30 !important;
+}
