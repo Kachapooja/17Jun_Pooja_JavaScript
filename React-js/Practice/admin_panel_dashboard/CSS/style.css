@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.col-md-2{
+    background-color: #1a1717;
+    /* height: auto; */
+}
+#side{
+    padding-bottom: 22%;
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+.sidebar a:hover:not(.active){
+    background-color: #555;
+    color: white;
+}
+  
