@@ -1,0 +1,41 @@
+$container:25%;
+$container-fluid:100%;
+$text-success:green;
+$text-danger:red;
+$text-info:lightblue;
+$text-primary:blue;
+$text-white:white;
+$margin-auto:auto;
+$bg-secondary:lightgray;
+$bg-dark:black;
+$bg-danger:red;
+$bg-primary:blue;
+$bg-info:cyan;
+$bg-lightgreen:lightgreen;
+$bg-white:white;
+$bg-powderblue:powderblue;
+$class-padding :  20px;
+$fontsize : 20px;
+$height: 20px;
+
+
+
+
+body{
+    background-color: black;
+}
+.calc{
+    background-color: darkgrey;
+    padding: 10px;
+    width: $container;
+    margin: $margin-auto;
+    margin-top: 5%;
+}
+.btn{
+    padding: $class-padding;
+    width: 21%;
+    margin: 6px;
+    background-color: $bg-dark;
+    color: $text-white;
+    font-size: $fontsize;
+}

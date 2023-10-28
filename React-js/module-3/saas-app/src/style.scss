@@ -1,0 +1,28 @@
+$container:90%;
+$container-fluid:100%;
+$text-success:green;
+$text-danger:red;
+$text-info:lightblue;
+$text-primary:blue;
+$text-white:white;
+$margin-auto:auto;
+$bg-secondary:lightgray;
+$bg-danger:red;
+$bg-primary:blue;
+$bg-info:cyan;
+$bg-lightgreen:lightgreen;
+$bg-white:white;
+$bg-powderblue:powderblue;
+$class-padding :  5px;
+
+
+
+.appointment-app{
+    background-color: $bg-primary;
+    padding: $class-padding;
+    width: $container;
+}
+
+body{
+    background-color: $bg-lightgreen;
+}
