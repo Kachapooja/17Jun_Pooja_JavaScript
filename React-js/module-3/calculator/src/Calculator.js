@@ -31,7 +31,7 @@ export default function Calculator() {
         <button type='button' className='btn'>0</button>
         <button type='button' className='btn'>00</button>
         <button type='button' className='btn'>.</button>
-        <button type='button' className='btn'>=</button>
+        <button type='button' className='btn btn1'>=</button>
     </div>
   )
 }

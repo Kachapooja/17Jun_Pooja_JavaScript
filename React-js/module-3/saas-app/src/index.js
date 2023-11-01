@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import '../src/style.scss';
 
-import Appointment from '../src/components/AppointmentApp';
+import Cart from './components/ShoppingCart';
 
-const root = ReactDOM.createRoot(document.getElementById("sass-app"));
+const root = ReactDOM.createRoot(document.getElementById("Shop-Cart"));
 
 root.render(
-    <Appointment />
+    <Cart />
 )
