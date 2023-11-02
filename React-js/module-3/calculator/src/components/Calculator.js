@@ -4,7 +4,7 @@ export default function Calculator() {
   return (
 
     <div className='calc'>
-        <input type='text' placeholder='0' style={{width:"97%" ,height:"30px" ,marginBottom:"10px"}}></input>
+        <input type='text' placeholder='0' style={{width:"97%" ,height:"30px" ,marginBottom:"10px",textAlign:"right"}}></input>
 
         <button type='button' className='btn'>%</button>
         <button type='button' className='btn'>CE</button>

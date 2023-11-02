@@ -1,9 +1,9 @@
 import React from "react";
 
 import ReactDOM from "react-dom/client";
-import '../src/style.scss';
+import '../src/components/style.scss';
 
-import Calculator from '../src/Calculator';
+import Calculator from './components/Calculator';
 
 const root=ReactDOM.createRoot(document.getElementById("Calcy"));
 
