@@ -1,0 +1,79 @@
+/* navbar section */
+#select-menu{
+    border:0;
+    background-color: transparent;
+    font-size: 18px;
+    margin: 13px;
+}
+
+.d-block{
+    border-radius: 40px;
+}
+
+/* slider section */
+
+#carouselExample{
+    position: relative;
+}
+.text1{
+    font-family:"Quicksand",sans-serif;
+    left: 3%;
+    top: 10%;
+    position: absolute;
+    font-size: 65px;
+    z-index: 2;
+}
+.text2{
+    font-family: "Lato",sans-serif;
+    font-size: 30px;
+    color: #7e7e7e;
+    position: absolute;
+    left: 3%;
+    top: 50%;
+}
+.text3{
+   width: 30%; 
+   border-radius: 30px;
+   background-color: white;
+   padding: 15px 30px;
+   position: absolute;
+   left: 3%;
+   top: 70%;
+}
+.btn1{
+    border-radius: 30px;
+    background-color: #3bb77e;
+    position: absolute;
+    height: inherit;
+    top: 0;
+    right: 0;
+    padding: 17px 22px;
+    border: 0;
+    color: white;
+}
+
+/* footer content */
+
+#footer-row ul li{
+    display:inline-block;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+.left-arrow ,.right-arrow{
+    color: grey;
+}
+.card{
+    width: 8.3%;
+    border-radius: 7px;
+    height: auto;
+    display: inline-block;
+    border: 0;
+}
+#crt{
+    margin-top: 15px;
+    height: 70px;
+    width: 70px;
+}
+a{
+    text-decoration: none;
+}

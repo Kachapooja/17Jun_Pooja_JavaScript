@@ -5,12 +5,12 @@ export default function Calculation() {
   return (
     <div className='calcy'>
         <center>
-        <h1>Calculation Here</h1>
+        <h1 style={{color:"red"}}>Calculation Here</h1>
 
-        <button className='btn' onClick={add}>Addition</button>
-        <button className='btn' onClick={subs}>Substraction</button>
-        <button className='btn' onClick={mul}>Multiplication</button>
-        <button className='btn' onClick={divi}>Division</button>
+        <button className='btn' style={{padding:"10px" ,margin:"5px" ,color:"white" ,backgroundColor:"blue" ,border:"none"}} onClick={add}>Addition</button>
+        <button className='btn'  style={{padding:"10px" ,margin:"5px" ,color:"white" ,backgroundColor:"blue" ,border:"none"}} onClick={subs}>Substraction</button>
+        <button className='btn'  style={{padding:"10px" ,margin:"5px" ,color:"white" ,backgroundColor:"blue" ,border:"none"}} onClick={mul}>Multiplication</button>
+        <button className='btn'  style={{padding:"10px" ,margin:"5px" ,color:"white" ,backgroundColor:"blue" ,border:"none"}} onClick={divi}>Division</button>
         </center>
     </div>
   )
