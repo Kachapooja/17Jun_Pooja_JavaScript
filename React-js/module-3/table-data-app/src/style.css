@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.table-app{
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.table-app{
+    text-align: center;
+    color: green;
+    font-size: 40px;
+}
+.table-app hr{
+    width: 35%;
+    height: auto;
+    border: solid 2px;
+
+}
+.ReactTable,td{
+    text-align: center !important;
+}
+.rt-td{
+    text-align: center !important;
+}

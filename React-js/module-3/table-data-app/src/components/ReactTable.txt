@@ -1,0 +1,8 @@
+react-table is used to fetch data in table.
+react-table is provides data filter.
+react-table is light-weight to load or fast render data inside of tables.
+react-table is just 11kb of size.
+react-table is 10x fast data renders inside of tables
+react-table default provides client-server paginations.
+
+cmd: npm install react-table-6
