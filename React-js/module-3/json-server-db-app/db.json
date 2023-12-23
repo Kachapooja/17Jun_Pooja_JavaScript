@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+
+  "blogcategory":
+
+  [
+
+    {
+      "id": 1,
+      "categoryname":"News",
+      "added_date":"15-12-2023"
+    },
+
+    {
+      "id": 2,
+      "categoryname":"Technical Courses",
+      "added_date":"15-12-2023"
+    }
+  ],
+
+  "addblogs":
+
+  [
+    {
+      "id": 1,
+      "blogname":"News",
+      "name":"denish",
+      "category":"news",
+      "added_date":"15-12-2023"
+    },
+
+    {
+      "id": 2,
+      "blogname":"Technical courses React js",
+      "name":"kavish",
+      "category":"Technical course",
+      "added_date":"15-12-2023"
+    }
+  ]
+}

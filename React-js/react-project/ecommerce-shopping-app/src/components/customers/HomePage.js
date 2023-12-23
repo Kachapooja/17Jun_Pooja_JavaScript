@@ -1,6 +1,5 @@
 import React from 'react';
-import { MDBContainer, MDBRow,MDBBtn } from 'mdb-react-ui-kit';
-// import { Form } from 'react-bootstrap'; 
+import { MDBContainer, MDBRow } from 'mdb-react-ui-kit';
 import logo from '../../images/logo.png';
 import imgg1 from "../../images/slider.png";
 import dealsimg1 from "../../images/deals-img1.jpg";
@@ -42,12 +41,13 @@ import limelight4 from "../../images/limelight4.png";
 import feedback1 from '../../images/feedback1.png';
 import feedback2 from '../../images/feedback2.png';
 import feedback3 from '../../images/feedback3.png';
+import googleplay from '../../images/googleplay-logo.png';
 import { Link } from 'react-router-dom';
 
 export default function HomePage() {
     return (
         <div>
-            <MDBContainer fluid className=''>
+            <MDBContainer fluid className='home-page'>
 
                 {/* main header */}
                 <MDBRow className=''>
@@ -61,7 +61,7 @@ export default function HomePage() {
                             <ul className="navbar-link">
                                 <li><Link to="/" className="nav-item active"><span className='' style={{ color: "#3c4242" }}>Shop</span></Link></li>
                                 <li><Link to="/" className="nav-item page-scroll">Men</Link></li>
-                                <li><Link to="/" className="nav-item page-scroll">Women</Link></li>
+                                <li><Link to="/list-page" className="nav-item page-scroll">Women</Link></li>
                                 <li><Link to="/" className="nav-item page-scroll">Combos</Link></li>
                                 <li><Link to="/" className="nav-item page-scroll">Joggers</Link></li>
                             </ul>
@@ -370,7 +370,7 @@ export default function HomePage() {
                 <div className='ms-5' style={{marginTop:"80px"}}>
                     <div className='rectangle'>
                         <div className='top-brand'>
-                            <h5 className="fs-1 fw-bold text-white ">Top Brand Deals</h5>
+                            <h5 className="fs-1 fw-bold text-white">Top Brand Deals</h5>
                             <span className='fs-5 text-white'>Up To <span className='text-warning'>60%</span> off on brands</span>
                         </div>
                         {/* branded icon img */}
@@ -521,17 +521,17 @@ export default function HomePage() {
 
                 {/* footer section */}
                 <footer className="footer mt-5">
-                    <MDBRow className='footer-body'>
-                    <div className='col-md-2 footer-text'>
+                    <MDBRow className='footer-body ms-5'>
+                    <div className='col-md-2 footer-text mt-5 ms-5'>
                         <h3 className='text-white'>Need Help</h3>
                         <br></br>
-                        <Link to="/" className='text-white' >Contact Us</Link><br></br>
+                        <Link to="/" className='text-white footer-text' >Contact Us</Link><br></br>
                         <Link to="/" className='text-white' >Track Order</Link><br></br>
                         <Link to="/" className='text-white' >Returns & Refunds</Link><br></br>
                         <Link to="/" className='text-white' >FAQs</Link><br></br>
                         <Link to="/" className='text-white' >Career</Link><br></br>
                     </div>
-                    <div className='col-md-2 footer-text1'>
+                    <div className='col-md-2 footer-text mt-5 ms-4'>
                         <h3 className='text-white'>Company</h3>
                         <br></br>
                         <Link to="/" className='text-white' >About Us</Link><br></br>
@@ -540,7 +540,7 @@ export default function HomePage() {
                         <Link to="/" className='text-white' >Collaboration</Link><br></br>
                         <Link to="/" className='text-white' >Media</Link><br></br>
                     </div>
-                    <div className='col-md-2 footer-text2'>
+                    <div className='col-md-2 footer-text mt-5 ms-4'>
                         <h3 className='text-white'>More Info</h3>
                         <br></br>
                         <Link to="/" className='text-white' >Terms and Conditions</Link><br></br>
@@ -548,14 +548,49 @@ export default function HomePage() {
                         <Link to="/" className='text-white' >Shipping Policy</Link><br></br>
                         <Link to="/" className='text-white' >Sitemap</Link><br></br>
                     </div>
-                    <div className='col-md-3 footer-text3'>
+                    <div className='col-md-4 footer-text mt-5 ms-4'>
                         <h3 className='text-white'>Location</h3>
                         <br></br>
                         <Link to="/" className='text-white' >support@euphoria.in</Link><br></br>
                         <Link to="/" className='text-white' >Eklingpura Chouraha,Ahemdabad Main Road</Link><br></br>
                         <Link to="/" className='text-white' >(NH 8- Near Mahadev Hotel)Udaipur,India-313002</Link><br></br>
                     </div> 
-                    </MDBRow>                   
+                    </MDBRow> 
+
+                    <h3 style={{marginLeft:"62%"}}><Link to="/" className='text-white'>Download The App</Link></h3>
+
+                    <div id='icons1'>
+                        <Link to="/"><i className='bi bi-facebook icn'></i></Link>
+                        <Link to="/"><i className='bi bi-instagram icn'></i></Link>
+                        <Link to="/"><i className='bi bi-twitter icn'></i></Link>
+                        <Link to="/"><i className='bi bi-linkedin icn'></i></Link>
+                    </div> 
+
+                    <MDBRow className='w-25 icons2'> 
+                        <div className='col-md-2'>
+                            <Link to="/"><img src={googleplay} alt=''/></Link>
+                        </div>
+                        <div className='col-md-6 tt1'>
+                            <span className='text-white  '>android app on</span>
+                            <h5 className='text-white '>Google Play</h5>
+                        </div>
+                    </MDBRow>
+
+                    <MDBRow className='w-25 icons3'> 
+                        <div className='col-md-2 icn1'>
+                            <Link to="/"><i className=' bi bi-phone text-white fs-1  '/></Link>
+                        </div>
+                        <div className='col-md-6 tt1'>
+                            <span className='text-white  '>Available on the</span>
+                            <h5 className='text-white '>App Store</h5>
+                        </div>
+                    </MDBRow> 
+
+                    <hr className='container mt-4 ' style={{color:"lightgrey"}}/>
+                    <span className='text-white fs-3' style={{marginLeft:"8%"}}>Popular Categories</span> 
+                    <hr className='container' style={{color:"lightgrey"}}/>   
+
+                    <span className='mt-3 text-white ' style={{marginLeft:"30%"}}>Copyright &copy; 2023 Euphoria Folks Pvt Ltd. All rights reserved.</span>
                 </footer>
 
                 <hr />

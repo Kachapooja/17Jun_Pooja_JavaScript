@@ -14,6 +14,7 @@ import CheckEmail from './components/customers/CheckEmail';
 import Verification from './components/customers/Verification';
 import CreateNewPswrd from './components/customers/CreateNewPswrd';
 import HomePage from './components/customers/HomePage';
+import ProductListPage from './components/customers/ProductListPage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,7 +29,7 @@ root.render(
       <Route path='/verification' element={<Verification/>}></Route>
       <Route path='/createnew-pass' element={<CreateNewPswrd/>}></Route>
       <Route path='/home-page' element={<HomePage/>}></Route>
-
+      <Route path='/list-page' element={<ProductListPage/>}></Route>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -22,7 +22,8 @@ h6 span{
 .pass{
     border: solid 1px #8a33fd !important;
 }
-/* home page section */
+/*    home page section     */
+/*header section*/
 .navbar-link{
     width: 100%;
     height: auto;
@@ -78,7 +79,6 @@ h6 span{
     border: 0;
     border-radius: 5px;
 }
-
 /* deals section */
 .deals{
     margin-top: 50px !important;
@@ -96,7 +96,6 @@ h6 span{
     margin-left: 3%;
     font-weight: 600;
 }
-
 /* arrival section */
 .arrival-section {
     display: flex;
@@ -109,7 +108,6 @@ h6 span{
     color: #3c4242;
     margin-top: 8%;
 }
-
 /* big saving section */
 .big-saving-section ,.big-saving-zone {
     display: flex;
@@ -171,7 +169,6 @@ h6 span{
     padding: 5px 10px;
     border-radius: 3px;    
 }
-
 /* combo-image section */
 .image-combo{
     display: flex;
@@ -203,7 +200,6 @@ h6 span{
     border: 0;
     border-radius: 5px;
 }
-
 /* men & women section */
 .men-section1 ,.men-section2 ,.women-section ,.limelight-section{
     display: flex;
@@ -226,7 +222,7 @@ h6 span{
     background-color: #3c4242;
 }
 .top-brand{
-    margin-top: 30px !important;
+    padding-top: 20px;
     text-align: center;
 }
 .rec-small{
@@ -305,7 +301,6 @@ h6 span{
 .pay-btn{
     margin-top: -10px;
 }
-
 /* feedback section */
 .feedback1{
     font-size: 14px;
@@ -321,13 +316,58 @@ h6 span{
 /* footer section */
 .footer{
     background-color: #2a2f2f;
-    height: 500px;
-}
-.footer-body{
-    margin-top: 10px !important;
+    height: 550px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .footer-text{
-    margin-left: 5%;
+    font-size: 14px;
+    line-height: 2.2em;
+}
+#icons1{
+    margin-left: 8%;
+    margin-top: 3%;
+}
+#icons1 .icn{
+    text-align: center;
+    color: #2a2f2f;
+    background-color: #fff;
+    margin: 5px;
+    padding: 6px 8px;
+    border-radius: 9px;
+    font-size: 18px;
+}
+.icons2{
+    margin-left: 61% !important;
+    margin-top: -40px !important;    
+}
+.tt1{
+    font-size: 12px;
+    margin-top: -6px !important;
+}
+.icons3{
+    float: right;
+    margin-top: -50px !important;
+}
+.icons3 .icn1{
+    margin-top: -15px !important;
+    margin-left: 9% !important;
+}
+/*     Product List Page Section      */
+/* side section */
+.vl{
+    border-left: 1px solid #bebcbd;
+    height: 500px;
+    margin-left: 2%;
+    margin-top: -16px;
+}
+.vl1{
+    border-left: 1px solid #bebcbd;
+    height: 500px;
+    margin-left: 21%;
+    margin-top: -60px;
+}
+.price-btn{
+    padding: 4px 35px;
 }
 
 
