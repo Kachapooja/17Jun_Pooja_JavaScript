@@ -356,18 +356,34 @@ h6 span{
 /* side section */
 .vl{
     border-left: 1px solid #bebcbd;
-    height: 500px;
+    height: auto;
     margin-left: 2%;
     margin-top: -16px;
 }
 .vl1{
     border-left: 1px solid #bebcbd;
-    height: 500px;
-    margin-left: 21%;
-    margin-top: -60px;
+    height: 1537px;
+    margin-left: 21.3%;
+    margin-top: -1553px;
 }
 .price-btn{
     padding: 4px 35px;
+    color: #3c4242;
+}
+.size-btn{
+    padding: 3px 20px;
+    margin: 2px 7px;
+    border-radius: 10px;
+    color: #3c4242;
+}
+/* main content section */
+.main-content{
+    margin-left: 350px !important;
+    margin-top: -1500px !important;
+}
+.limelight-section
+{
+    margin-left: 24%;
 }
 
 
