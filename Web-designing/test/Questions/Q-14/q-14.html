@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            background-color:#000;
+        }
+        b,p{
+            font-size: 20px;
+            color: white;
+        }
+        .calculate{
+            height: auto;
+            width: 30%;
+            margin-left: 35%;
+            text-align: center;
+            border: 2px solid #1ea7a0;
+            background-color: #fff;
+        }
+        .calculate p{
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Que:14 -->
+    <b>Que:14</b>
+
+    <p>Write a JavaScript program to calculate multiplication and division of two numbers (input from the user). </p>
+
+    <b><u>Ans:</u></b><br><br>
+
+    <div class="calculate">
+        <h1>Calculation</h1>
+
+        <form>
+            <label>Enter 1st Number:</label>
+            <input type="text" id="text1"><br><br>
+
+            <label>Enter 2nd Number:</label>
+            <input type="text" id="text2"><br><br>
+
+            <div class="btn">
+                <input type="button" value="Multiply" onclick="mul()">
+                <input type="button" value="Divide" onclick="div()">
+            </div>
+
+            <p>The Result is :
+                <span id="result"></span>
+            </p>
+        </form>
+    </div>
+
+    <script>
+
+        function mul() {
+            var a = (parseInt(document.getElementById('text1').value));
+
+            var b = (parseInt(document.getElementById('text2').value));
+
+            document.getElementById('result').innerHTML = a * b;
+        }
+
+        function div() {
+            var a = (parseInt(document.getElementById('text1').value));
+
+            var b = (parseInt(document.getElementById('text2').value));
+
+            document.getElementById('result').innerHTML = a / b;
+        }
+    </script>
+</body>
+</html>

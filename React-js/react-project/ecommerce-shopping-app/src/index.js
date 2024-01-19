@@ -15,6 +15,10 @@ import Verification from './components/customers/Verification';
 import CreateNewPswrd from './components/customers/CreateNewPswrd';
 import HomePage from './components/customers/HomePage';
 import ProductListPage from './components/customers/ProductListPage';
+import ProductDetailPage from './components/customers/ProductDetailPage';
+import CartPage from './components/customers/CartPage';
+import CheckOutPage from './components/customers/CheckOutPage';
+import ContactDetailPage from './components/customers/ContactDetailPage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -30,6 +34,10 @@ root.render(
       <Route path='/createnew-pass' element={<CreateNewPswrd/>}></Route>
       <Route path='/home-page' element={<HomePage/>}></Route>
       <Route path='/list-page' element={<ProductListPage/>}></Route>
+      <Route path='/detail-page' element={<ProductDetailPage/>}></Route>
+      <Route path='/cart-page' element={<CartPage/>}></Route>
+      <Route path='/check-out-page' element={<CheckOutPage/>}></Route>
+      <Route path='/contact-detail-page' element={<ContactDetailPage/>}></Route>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

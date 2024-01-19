@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: burlywood;
+    }
+    .navbar{
+        background-color:black;    
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    li {
+        float: left;
+        padding: 5px 50px;
+    }
+    
+    li a {
+        color: white;
+        display: block;
+        padding: 8px;
+        text-decoration: none;
+      }
+
+    #car{
+        background-color: transparent;
+        color: white;
+        border: 0;
+        margin-top: 5px;
+    }  
+    option{
+        background-color: black;
+        color: white;
+    }
+      </style>
+      
+</head>
+<body>
+    <!-- Que:3 -->
+    <span>Que:3</span>
+    
+    <p>Define the list types in HTML? explaine with examples of navbar and apply a dropdown in navbar also ?</p>
+    
+    <b><u>Ans:</u></b><br><br>
+
+    -> There are three list types in HTML:<br><br>
+
+        1)Unordered list — used to group a set of related items in no particular order.<br><br>
+
+        2)Ordered list — used to group a set of related items in a specific order.<br><br>
+
+        3)Description list — used to display name/value pairs such as terms and definitions.<br><br>
+
+    <b><u>Example:</u></b><br><br>
+        
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li>
+                <select name="Car" id="car">
+                    <option value="volvo">Volvo</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Tesla">Tesla</option>
+                </select>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+</body>
+</html>

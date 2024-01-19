@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            background-color:#000;
+        }
+        b,p{
+            font-size: 20px;
+            color: white;
+        }
+        .container{
+            height: auto;
+            width: 100%;
+            background-color: white;
+            position: relative;
+        }
+        .zindex {
+            position: absolute;
+            width: 150;
+            height: 150px;
+            border-radius: 10px;
+            color: white;
+            padding: 5px;
+            text-align: right;
+        }
+
+#red {
+  z-index: 3;
+  background-color: red;
+  top: 10px;
+  left: 10px;
+}
+
+#yellow {
+  z-index: 2; 
+  background-color: yellow;
+  top: 30px;
+  left: 30px;
+}
+
+#blue {
+  z-index: 1;
+  background-color: blue;
+  top: 50px;
+  left: 50px;
+}
+        
+    </style>
+</head>
+<body>
+    
+    <!-- Que:9 -->
+    <b>Que:9</b>
+
+    <p>Define z-index ? create examples as look like this examples using z-index.</p>
+
+    <b><u>Ans:</u></b><br><br>
+
+    <div class="container">
+
+        <div class="zindex">
+        <div id="red">Red</div>
+        <div id="yellow">yellow</div>
+        <div id="blue">Blue</div>
+        </div>
+    </div>
+</body>
+</html>

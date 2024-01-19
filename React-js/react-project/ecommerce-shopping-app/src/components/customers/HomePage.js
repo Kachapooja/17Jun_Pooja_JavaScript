@@ -587,7 +587,7 @@ export default function HomePage() {
                     </MDBRow> 
 
                     <hr className='container mt-4 ' style={{color:"lightgrey"}}/>
-                    <span className='text-white fs-3' style={{marginLeft:"8%"}}>Popular Categories</span> 
+                    <span className='text-white fs-3' style={{marginLeft:"8%"}}>Popular Categories<i className='bi bi-chevron-down float-end' style={{marginRight:"10%"}}></i></span> 
                     <hr className='container' style={{color:"lightgrey"}}/>   
 
                     <span className='mt-3 text-white ' style={{marginLeft:"30%"}}>Copyright &copy; 2023 Euphoria Folks Pvt Ltd. All rights reserved.</span>

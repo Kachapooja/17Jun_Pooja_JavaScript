@@ -28,6 +28,7 @@ import w4 from '../../images/w-4.png';
 import women3 from '../../images/women-3.png';
 import limelight2 from '../../images/limelight2.png';
 import rectangle from "../../images/Rectangle 21.png";
+import googleplay from '../../images/googleplay-logo.png';
 import { Link } from 'react-router-dom';
 
 
@@ -47,7 +48,7 @@ export default function ProductListPage() {
         <div className='col-md-5'>
             <nav className="mt-3 fs-5" id="coll">
                 <ul className="navbar-link">
-                    <li><Link to="/" className="nav-item page-scroll">Shop</Link></li>
+                    <li><Link to="/home-page" className="nav-item page-scroll">Shop</Link></li>
                     <li><Link to="/" className="nav-item page-scroll">Men</Link></li>
                     <li><Link to="/" className="nav-item active"><span className='' style={{ color: "#3c4242" }}>Women</span></Link></li>
                     <li><Link to="/" className="nav-item page-scroll">Combos</Link></li>
@@ -350,9 +351,9 @@ export default function ProductListPage() {
     </MDBRow>
 
     {/* women section */}
-    <div className='limelight-section mt-5'>
+    <div className='list-section mt-5 d-flex'>
         <div>
-            <img src={limelight1} alt='' className='ms-5 position-relative' />
+            <Link to='/detail-page'><img src={limelight1} alt='' className='ms-5 position-relative'/></Link>
             <button className='hrt-btn border border-0 position-absolute mt-2'>
                 <i className='bi bi-heart '></i>
             </button>
@@ -389,7 +390,7 @@ export default function ProductListPage() {
             </div>
         </div>
     </div>
-    <div className='limelight-section mt-5'>
+    <div className='list-section mt-5 d-flex'>
         <div>
             <img src={w5} alt='' className='position-relative' style={{marginLeft:"35px"}}/>
             <button className='hrt-btn border border-0 position-absolute mt-2'>
@@ -427,7 +428,7 @@ export default function ProductListPage() {
             </div>
         </div>
     </div>
-    <div className='limelight-section mt-5'>
+    <div className='list-section mt-5 d-flex'>
         <div>
             <img src={w6} alt='' className='position-relative' style={{marginLeft:"35px"}}/>
             <button className='hrt-btn border border-0 position-absolute mt-2'>
@@ -465,7 +466,7 @@ export default function ProductListPage() {
             </div>
         </div>
     </div>
-    <div className='limelight-section mt-5'>
+    <div className='list-section mt-5 d-flex'>
         <div>
             <img src={w4} alt='' className='position-relative' style={{marginLeft:"35px"}}/>
             <button className='hrt-btn border border-0 position-absolute mt-2'>
@@ -527,24 +528,139 @@ export default function ProductListPage() {
     </div>
 
     <table className='table table-bordered h-auto mt-5' style={{backgroundColor:"#f6f6f6",width:"1200px",marginLeft:"5%"}}>
-        <thead className='fs-5'>
+        <thead className='fs-4'>
             <tr>
                 <th>Women's Clothing</th>
                 <th className='text-center'>Best Price</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody className='fs-6'>
             <tr className=''>
-                <td style={{border:"none !important"}}>Pice Any 4-Womens Plain T-Shirt Combo</td>
+                <td>Pick Any 4-Womens Plain T-Shirt Combo</td>
                 <td className='text-center'>$1099</td>
             </tr>
             <tr>
-                <td>Pice Any 4-Womens Plain T-Shirt Combo</td>
+                <td>Pick Any 4-Plain Womens Boxer Combo</td>
                 <td className='text-center'>$1099</td>
+            </tr>
+            <tr>
+                <td>Pick Any 4-Womens Plain Full Sleeve T-Shirt Combo</td>
+                <td className='text-center'>$1399</td>
+            </tr>
+            <tr>
+                <td>Multicolor CheckeredLong Casual Shirts for Women </td>
+                <td className='text-center'>$499</td>
+            </tr>
+            <tr>
+                <td>Pice Any 2 Plain Boxy Casual Shirt for Women Combo</td>
+                <td className='text-center'>$799</td>
+            </tr>
+            <tr>
+                <td>Blue Floral Anarakali Kurti</td>
+                <td className='text-center'>$599</td>
+            </tr>
+            <tr>
+                <td>Jade Black Narrow Cut Flexible Women Jeggings</td>
+                <td className='text-center'>$998</td>
+            </tr>
+            <tr>
+                <td>Mustard-yellow Solid Straight-Fit Women Pant</td>
+                <td className='text-center'>$499</td>
+            </tr>
+            <tr>
+                <td>Women Pants Combo -Pick Any 2</td>
+                <td className='text-center'>$800</td>
+            </tr>
+            <tr>
+                <td>Pista Green Solid Boxy Casual Shirts for Women</td>
+                <td className='text-center'>$449</td>
+            </tr>
+            <tr>
+                <td>Plain Burgundy Women Boxer</td>
+                <td className='text-center'>$349</td>
+            </tr>
+            <tr>
+                <td>Striped Front Tie Casual Shirts for Women</td>
+                <td className='text-center'>$449</td>
             </tr>
         </tbody>
     </table>
-    {/* <hr></hr> */}
+
+    {/* footer section */}
+    <footer className="footer mt-5">
+        <MDBRow className='footer-body ms-5'>
+        <div className='col-md-2 footer-text mt-5 ms-5'>
+            <h3 className='text-white'>Need Help</h3>
+            <br></br>
+            <Link to="/" className='text-white footer-text' >Contact Us</Link><br></br>
+            <Link to="/" className='text-white' >Track Order</Link><br></br>
+            <Link to="/" className='text-white' >Returns & Refunds</Link><br></br>
+            <Link to="/" className='text-white' >FAQs</Link><br></br>
+            <Link to="/" className='text-white' >Career</Link><br></br>
+        </div>
+        <div className='col-md-2 footer-text mt-5 ms-4'>
+            <h3 className='text-white'>Company</h3>
+            <br></br>
+            <Link to="/" className='text-white' >About Us</Link><br></br>
+            <Link to="/" className='text-white' >euphoria Blog</Link><br></br>
+            <Link to="/" className='text-white' >euphoriastan</Link><br></br>
+            <Link to="/" className='text-white' >Collaboration</Link><br></br>
+            <Link to="/" className='text-white' >Media</Link><br></br>
+        </div>
+        <div className='col-md-2 footer-text mt-5 ms-4'>
+            <h3 className='text-white'>More Info</h3>
+            <br></br>
+            <Link to="/" className='text-white' >Terms and Conditions</Link><br></br>
+            <Link to="/" className='text-white' >Privacy Policy</Link><br></br>
+            <Link to="/" className='text-white' >Shipping Policy</Link><br></br>
+            <Link to="/" className='text-white' >Sitemap</Link><br></br>
+        </div>
+        <div className='col-md-4 footer-text mt-5 ms-4'>
+            <h3 className='text-white'>Location</h3>
+            <br></br>
+            <Link to="/" className='text-white' >support@euphoria.in</Link><br></br>
+            <Link to="/" className='text-white' >Eklingpura Chouraha,Ahemdabad Main Road</Link><br></br>
+            <Link to="/" className='text-white' >(NH 8- Near Mahadev Hotel)Udaipur,India-313002</Link><br></br>
+        </div> 
+        </MDBRow> 
+
+        <h3 style={{marginLeft:"62%"}}><Link to="/" className='text-white'>Download The App</Link></h3>
+
+        <div id='icons1'>
+            <Link to="/"><i className='bi bi-facebook icn'></i></Link>
+            <Link to="/"><i className='bi bi-instagram icn'></i></Link>
+            <Link to="/"><i className='bi bi-twitter icn'></i></Link>
+            <Link to="/"><i className='bi bi-linkedin icn'></i></Link>
+        </div> 
+
+        <MDBRow className='w-25 icons2'> 
+            <div className='col-md-2'>
+                <Link to="/"><img src={googleplay} alt=''/></Link>
+            </div>
+            <div className='col-md-6 tt1'>
+                <span className='text-white  '>android app on</span>
+                <h5 className='text-white '>Google Play</h5>
+            </div>
+        </MDBRow>
+
+        <MDBRow className='w-25 icons3'> 
+            <div className='col-md-2 icn1'>
+                <Link to="/"><i className=' bi bi-phone text-white fs-1  '/></Link>
+            </div>
+            <div className='col-md-6 tt1'>
+                <span className='text-white  '>Available on the</span>
+                <h5 className='text-white '>App Store</h5>
+            </div>
+        </MDBRow> 
+
+        <hr className='container mt-4 ' style={{color:"lightgrey"}}/>
+        <span className='text-white fs-3' style={{marginLeft:"8%"}}>Popular Categories<i className='bi bi-chevron-down float-end' style={{marginRight:"10%"}}></i></span> 
+        <hr className='container' style={{color:"lightgrey"}}/>   
+
+        <span className='mt-3 text-white ' style={{marginLeft:"30%"}}>Copyright &copy; 2023 Euphoria Folks Pvt Ltd. All rights reserved.</span>
+    </footer>
+
+    <hr></hr>
 </MDBContainer>
 
 </div>
