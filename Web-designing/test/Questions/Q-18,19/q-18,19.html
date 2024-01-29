@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            background-color:#000;
+        }
+        b,p{
+            font-size: 20px;
+            color: white;
+        }
+        .container{
+            color: white;
+            height: 100px;
+            width: 30%;
+            margin: auto;
+            text-align: center;
+            background-color: #090a5a;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Que:18,19 -->
+
+    <b>Que:18,19</b>
+
+    <p>Write a JavaScript function to generate a random integer.</p>
+
+    <b><u>Ans:</u></b><br><br>
+    
+    <div class="container">
+        <span style="font-size: 20px;">Random Number</span>
+        <p id="random"></p>
+    </div>
+
+    <script>
+       
+       document.getElementById("random").innerHTML = Math.floor(Math.random() * 100);
+
+    </script>
+
+</body>
+</html>
+

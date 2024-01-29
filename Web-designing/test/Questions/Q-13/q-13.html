@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            background-color:#000;
+        }
+        b,p{
+            font-size: 20px;
+            color: white;
+        }
+        .container{
+            color: white;
+            background-color:chocolate;
+            height: 200px;
+            width: 30%;
+            margin: auto; 
+            text-align: center;       
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Que:13 -->
+
+    <b>Que:13</b>
+
+    <p>Write a JavaScript program to print the current window contents.  </p>
+
+    <b><u>Ans:</u></b><br><br>
+
+        <div class="container">
+
+            <h1>Window Print Method</h1>
+
+            <p> Click the button to print the current page.</p>
+
+            <button onclick="print()">Print Page</button>
+
+        </div>
+
+    <script>
+
+        function print()
+
+            window.print();
+
+    </script>
+</body>
+</html>

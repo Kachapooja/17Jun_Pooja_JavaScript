@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            background-color:#000;
+        }
+        b,p{
+            font-size: 20px;
+            color: white;
+        }
+        .container{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Que:12 -->
+
+    <b>Que:12</b>
+
+    <p>Write a JavaScript program to display the current day and time in the following format.  </p>
+
+    <b><u>Ans:</u></b><br><br>
+    
+    <div class="container">
+        <p id="display"></p>
+    </div>
+
+    <script>
+        const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        const d = new Date();
+        let day = days[d.getDay()];
+        let hour = d.getHours(); 
+        let minute = d.getMinutes();  
+
+        document.getElementById("display").innerHTML = "Today is :" + day + "<br>" + "Current Time is :" + hour + ":" + minute;
+    </script>
+
+</body>
+</html>
+

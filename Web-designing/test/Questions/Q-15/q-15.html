@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            background-color:#000;
+        }
+        b,p{
+            font-size: 20px;
+            color: white;
+        }
+        .container{
+            color: black;
+            background-color: rgb(217, 255, 0);
+            height: 150px;
+            width: 30%;
+            margin: auto;
+            text-align: center;
+        }
+        #reverse{
+            color : black;
+        }
+        span{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Que:15 -->
+
+    <b>Que:15</b>
+
+    <p>Write a JavaScript function that reverses a number.</p>
+
+    <b><u>Ans:</u></b><br><br>
+
+    <div class="container">
+        <span>Original Number : 1,2,3,4,5</span> <br><br>
+        <span style="font-weight: 600;">Reverse Number </span>
+        <p id="reverse"></p>
+    </div>
+
+    <script>
+
+        const nm = [1,2,3,4,5];
+
+        document.getElementById("reverse").innerHTML = nm.reverse()
+
+    </script>
+</body>
+</html>

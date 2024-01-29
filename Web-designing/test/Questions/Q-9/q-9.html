@@ -24,35 +24,30 @@
         }
         .zindex {
             position: absolute;
-            width: 150;
+            width: 150px;
             height: 150px;
             border-radius: 10px;
-            color: white;
+            color: black;
             padding: 5px;
-            text-align: right;
         }
-
-#red {
-  z-index: 3;
-  background-color: red;
-  top: 10px;
-  left: 10px;
-}
-
-#yellow {
-  z-index: 2; 
-  background-color: yellow;
-  top: 30px;
-  left: 30px;
-}
-
-#blue {
-  z-index: 1;
-  background-color: blue;
-  top: 50px;
-  left: 50px;
-}
-        
+        #red {
+            z-index: 1;
+            background-color: red;
+            top: 10px;
+            left: 10px;
+        }
+        #yellow {
+            z-index: 2; 
+            background-color: yellow;
+            top: 30px;
+            left: 30px;
+        }
+        #blue {
+            z-index: 3;
+            background-color: blue;
+            top: 50px;
+            left: 50px;
+        }
     </style>
 </head>
 <body>
@@ -65,12 +60,9 @@
     <b><u>Ans:</u></b><br><br>
 
     <div class="container">
-
-        <div class="zindex">
-        <div id="red">Red</div>
-        <div id="yellow">yellow</div>
-        <div id="blue">Blue</div>
-        </div>
+        <div class="zindex" id="red">Red</div>
+        <div class="zindex" id="yellow">yellow</div>
+        <div class="zindex" id="blue">Blue</div>
     </div>
 </body>
 </html>
