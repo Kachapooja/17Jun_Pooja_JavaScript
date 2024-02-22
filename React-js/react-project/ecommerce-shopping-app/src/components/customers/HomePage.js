@@ -75,17 +75,23 @@ export default function HomePage() {
                         </form>
                     </div>
 
-
+                    {/* icons */}
                     <div className='col-md-2 mt-4' id='icons'>
+                        <Link to='/wishlist-page'>
                         <button className='border border-0'>
                             <i className='bi bi-heart'></i>
                         </button>
+                        </Link>
+                        <Link to='/contact-detail-page'>
                         <button className='border border-0 ms-2'>
                             <i className='bi bi-person'></i>
                         </button>
+                        </Link>
+                        <Link to='/cart-page'>
                         <button className='border border-0 ms-2'>
                             <i className='bi bi-cart'></i>
                         </button>
+                        </Link>
                     </div>
                 </MDBRow>
                 <hr />

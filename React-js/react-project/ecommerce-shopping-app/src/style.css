@@ -433,6 +433,25 @@ h6 span{
     width: 101.7%;
     height: 280px;
 }
+/* personal info */
+/* .input-group{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+} */
+.addbtn{
+    color: #3c4242;
+    border: 0;
+    font-weight: 600;
+    background-color: transparent;
+}
+/* wishlist page */
+.wish-btn{
+    margin-left: 5%;
+    background-color: #8a33fd;
+    height: 40px;
+    
+}
 
 
 /* media query */

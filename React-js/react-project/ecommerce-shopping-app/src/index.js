@@ -19,6 +19,14 @@ import ProductDetailPage from './components/customers/ProductDetailPage';
 import CartPage from './components/customers/CartPage';
 import CheckOutPage from './components/customers/CheckOutPage';
 import ContactDetailPage from './components/customers/ContactDetailPage';
+import AddAddressPage from './components/customers/AddAddressPage';
+import ConfirmedOrderPage from './components/customers/ConfirmedOrderPage';
+import EmptyCartPage from './components/customers/EmptyCartPage';
+import WishlistPage from './components/customers/WishlistPage';
+import EmptyWishlistPage from './components/customers/EmptyWishlistPage';
+import MyOrderPage from './components/customers/MyOrderPage';
+import OrderDetailPage from './components/customers/OrderDetailPage';
+import ErrorPage from './components/customers/ErrorPage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -38,6 +46,14 @@ root.render(
       <Route path='/cart-page' element={<CartPage/>}></Route>
       <Route path='/check-out-page' element={<CheckOutPage/>}></Route>
       <Route path='/contact-detail-page' element={<ContactDetailPage/>}></Route>
+      <Route path='/add-address' element={<AddAddressPage/>}></Route>
+      <Route path='/confirmed-order' element={<ConfirmedOrderPage/>}></Route>
+      <Route path='/empty-cart' element={<EmptyCartPage/>}></Route>
+      <Route path='/wishlist-page' element={<WishlistPage/>}></Route>
+      <Route path='/empty-wishlist' element={<EmptyWishlistPage/>}></Route>
+      <Route path='/my-order' element={<MyOrderPage/>}></Route>      
+      <Route path='/order-detail' element={<OrderDetailPage/>}></Route>
+      <Route path='/error-page' element={<ErrorPage/>}></Route>      
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

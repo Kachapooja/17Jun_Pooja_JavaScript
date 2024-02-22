@@ -4,13 +4,17 @@ import {Link} from 'react-router-dom';
 import logo from '../../images/logo.png'; 
 import rectangle from "../../images/Rectangle 21.png";
 import googleplay from '../../images/googleplay-logo.png';
+import emptywishlist from '../../images/empty-wishlist.png';
+import detailimg1 from '../../images/list-img1.png';
+import detailimg2 from '../../images/list-img2.png';
+import limelight4 from '../../images/limelight4.png';
+import detailimg3 from '../../images/list-img3.png';
 
 
-
-export default function ContactDetailPage() {
+export default function EmptyWishlistPage() {
   return (
 <div>
-<MDBContainer fluid className='contact-detail-page'>
+<MDBContainer fluid className='empty-wishlist'>
 
     {/*  main header section   */}
     <MDBRow className=''>
@@ -38,7 +42,7 @@ export default function ContactDetailPage() {
             </form>
         </div>
 
-        {/* icons */}
+
         <div className='col-md-2 mt-4' id='icons'>
             <Link to='/wishlist-page'>
             <button className='border border-0'>
@@ -51,7 +55,7 @@ export default function ContactDetailPage() {
                     <i className='bi bi-person'></i>
                 </button>
             </Link>
-            <Link to='/check-out-page'>
+            <Link to='/cart-page'>
             <button className='border border-0 ms-2' >
                 <i className='bi bi-cart'></i>
             </button>
@@ -69,7 +73,7 @@ export default function ContactDetailPage() {
         <span>My Account</span>&nbsp;
         <i className='bi bi-chevron-right'></i>&nbsp;
         <br></br><br></br>
-        <span style={{color:"#3c4242"}}>Personal Info</span>
+        <span style={{color:"#3c4242"}}>Wishlist</span>
         </div>
 
         {/* personal info section */}
@@ -85,11 +89,11 @@ export default function ContactDetailPage() {
                 <i className='bi bi-bag'></i>
                 <Link to='/my-order' style={{color:"#807d7e"}}><span className='ms-2'>My orders</span></Link>
             </div>
-            <div className='mt-3' style={{marginLeft:"25%",color:"#807d7e",fontSize:"15px"}}>
+            <div className='mt-3' style={{marginLeft:"25%",color:"#807d7e",fontSize:"15px",backgroundColor:"#f6f6f6"}}>
                 <i className='bi bi-heart'></i>
                 <Link to='/wishlist-page' style={{color:"#807d7e"}}><span className='ms-2'>Wishlist</span></Link>
             </div>
-            <div className='mt-3' style={{marginLeft:"25%",color:"#807d7e",fontSize:"15px",backgroundColor:"#f6f6f6"}}>
+            <div className='mt-3' style={{marginLeft:"25%",color:"#807d7e",fontSize:"15px"}}>
                 <i className='bi bi-person'></i>
                 <Link to='/contact-detail-page' style={{color:"#807d7e"}}><span className='ms-2'>My Info</span></Link>
             </div>
@@ -98,87 +102,77 @@ export default function ContactDetailPage() {
                 <Link to='/' style={{color:"#807d7e"}}><span className='ms-2'>Sign out</span></Link>
             </div>
         </div>
-        <div className='col-md-7 ms-5'>
-            <span className='fw-bold fs-2' style={{color:"#3c4242"}}>My Info</span><br></br>
-            <span className='fw-bold fs-6' style={{color:"#3c4242"}}>Contact Details</span>
-
+        <div className='col-md-7 ms-5 '>
+            <div className='border border-1 text-center w-75' style={{marginLeft:"20%"}}>
+                <img  src={emptywishlist} alt='' className='mt-5'/>
+                <div className='mt-3'>
+                <b className='fs-3' style={{color:"#3c4242"}}>Your Wishlist is empty.</b><br/>
+                <span className='fs-6' style={{color:"#807d7e"}}>You don't have any products in the wishlist yet. You will find a lot</span><br/>
+                <span style={{color:"#807d7e"}}>of interesting products on our Shop page.</span><br/>
+                <Link to='/'><button className='mt-3 mb-5 px-4 py-1 text-white border border-0 rounded-3' style={{backgroundColor:"#8a33fd"}}>Continue Shopping</button></Link>
+                </div>
+            </div>
             
-            {/* address line-1 */}
-            <div className='d-flex'>
-                {/* address-1 */}
-                <div className='mt-4'>
-                    <div className='px-4 py-3 border border-0 rounded-5 ' style={{backgroundColor:"#f6f6f6",color:"#807d7e"}}>
-                        <b style={{color:"#3c4242"}}>Jhanvi Shah</b><br/>
-                        <span>8980252445</span><br/>
-                        <span>1/4 Pragatinagar Flats,opp.jain derasar,near Jain derasar,Vijaynagar road.</span>
-                        <div className='mt-3 ' >
-                            <button className='px-3 border border-2 rounded-3 bg-transparent' style={{color:"#807d7e",fontSize:"15px"}}>Home</button>
-                            <button className='ms-3 px-3 border border-2 rounded-3 bg-transparent' style={{color:"#807d7e",fontSize:"15px"}}>Default billing address</button>
-                        </div>
-                        <div className='mt-3'>
-                            <button type='button' className='addbtn'>Remove</button> |
-                            <button type='button' className='addbtn'>Edit</button>
-                        </div>
-                    </div>
-                </div>
-
-                {/* address-2 */}
-                <div className='mt-4 ms-5'>
-                    <div className='px-4 py-3 border border-0 rounded-5' style={{backgroundColor:"#f6f6f6",color:"#807d7e"}}>
-                        <b style={{color:"#3c4242"}}>Jhanvi Shah</b><br/>
-                        <span>8980252445</span><br/>
-                        <span>1/4 Pragatinagar Flats,opp.jain derasar,near Jain derasar,Vijaynagar road.</span>
-                        <div className='mt-3 ' >
-                            <button className='px-3 border border-2 rounded-3 bg-transparent' style={{color:"#807d7e",fontSize:"15px"}}>Home</button>
-                            <button className='ms-3 px-3 border border-2 rounded-3 bg-transparent' style={{color:"#807d7e",fontSize:"15px"}}>Default shipping address</button>
-                        </div>
-                        <div className='mt-3'>
-                            <button type='button' className='addbtn'>Remove</button> |
-                            <button type='button' className='addbtn'>Edit</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* address line-2 */}
-            <div className='d-flex'>
-                {/* address-3 */}
-                <div className='mt-4'>
-                    <div className='px-4 py-3 border border-0 rounded-5 ' style={{backgroundColor:"#f6f6f6",color:"#807d7e"}}>
-                        <b style={{color:"#3c4242"}}>Jhanvi Shah</b><br/>
-                        <span>8980252445</span><br/>
-                        <span>1/4 Pragatinagar Flats,opp.jain derasar,near Jain derasar,Vijaynagar road.</span>
-                        <div className='mt-3 ' >
-                            <button className='px-3 border border-2 rounded-3 bg-transparent' style={{color:"#807d7e",fontSize:"15px"}}>Office</button>
-                        </div>
-                        <div className='mt-3'>
-                            <button type='button' className='addbtn'>Remove</button> |
-                            <button type='button' className='addbtn'>Edit</button>  |
-                            <button type='button' className='addbtn'>Set as default</button>
-                        </div>
-                    </div>
-                </div>
-
-                {/* address-4 */}
-                <div className='mt-4 ms-5'>
-                    <div className='px-4 py-3 border border-0 rounded-5' style={{backgroundColor:"#f6f6f6",color:"#807d7e"}}>
-                        <b style={{color:"#3c4242"}}>Jhanvi Shah</b><br/>
-                        <span>8980252445</span><br/>
-                        <span>1/4 Pragatinagar Flats,opp.jain derasar,near Jain derasar,Vijaynagar road.</span>
-                        <div className='mt-3 ' >
-                            <button className='px-3 border border-2 rounded-3 bg-transparent' style={{color:"#807d7e",fontSize:"15px"}}>Home2</button>
-                        </div>
-                        <div className='mt-3'>
-                            <button type='button' className='addbtn'>Remove</button> |
-                            <button type='button' className='addbtn'>Edit</button> |
-                            <button type='button' className='addbtn'>Set as default</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         </MDBRow>
     </section>
+
+    {/* recently view */}
+    <div className='mt-5 ms-5'>
+        <img src={rectangle} alt='' style={{ marginTop: "-11px" }} />
+        <span className='fs-2 ms-3' style={{ fontWeight: "600", color: "#3c4242" }}>Recently Viewed</span>
+    </div>
+
+    <div className='limelight-section mt-5'>
+        <div>
+            <img src={detailimg1} alt='' className='ms-5 position-relative' />
+            <button className='hrt-btn border border-0 position-absolute mt-2'>
+                <i className='bi bi-heart '></i>
+            </button>
+            <div className='mt-3' style={{marginLeft:"10%"}}>
+                <span className='text-right ms-3 limelight1'>Black Sweatshirt with..</span>
+                <br></br>  
+                <span className=' ms-3 limelight2'>Jhanvi's Brand</span>
+                <button className='pay-btn border border-0'>$123.00</button>
+            </div>
+        </div>
+        <div>
+            <img src={detailimg2} alt='' className='position-relative' style={{marginLeft:"35px"}}/>
+            <button className='hrt-btn border border-0 position-absolute mt-2'>
+                <i className='bi bi-heart '></i>
+            </button>
+            <div className='mt-3' style={{marginLeft:"10%"}}>
+                <span className='text-right ms-2 limelight1'>Line Pattern Black H..</span>
+                <br></br>  
+                <span className=' ms-2 limelight2'>AS's Brand</span>
+                <button className='pay-btn float-end border border-0'>$37.00</button>
+            </div>
+        </div>
+        <div>
+            <img src={limelight4} alt='' className='position-relative' style={{marginLeft:"35px"}}/>
+            <button className='hrt-btn border border-0 position-absolute mt-2'>
+                <i className='bi bi-heart '></i>
+            </button>
+            <div className='mt-3' style={{marginLeft:"10%"}}>
+                <span className='text-right ms-2 limelight1'>Black Shorts</span>
+                <br></br>  
+                <span className=' ms-2 limelight2'>MM's Brand</span>
+                <button className='pay-btn float-end border border-0'>$37.00</button>
+            </div>
+        </div>
+        <div>
+            <img src={detailimg3} alt='' className='position-relative' style={{marginLeft:"35px"}}/>
+            <button className='hrt-btn border border-0 position-absolute mt-2'>
+                <i className='bi bi-heart '></i>
+            </button>
+            <div className='mt-3' style={{marginLeft:"10%"}}>
+                <span className='text-right ms-2 limelight1'>Levender Hoodies with..</span>
+                <br></br>  
+                <span className=' ms-2 limelight2'>Nike's Brand</span>
+                <button className='pay-btn float-end border border-0'>$119.00</button>
+            </div>
+        </div>
+    </div>
 
     {/* footer section */}
     <footer className="footer">

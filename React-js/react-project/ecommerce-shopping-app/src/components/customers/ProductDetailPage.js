@@ -60,17 +60,23 @@ export default function ProductDetailPage() {
             </form>
         </div>
 
-
+        {/* icons */}
         <div className='col-md-2 mt-4' id='icons'>
+            <Link to='/wishlist-page'>
             <button className='border border-0'>
                 <i className='bi bi-heart'></i>
             </button>
+            </Link>
+            <Link to='/contact-detail-page'>
             <button className='border border-0 ms-2'>
                 <i className='bi bi-person'></i>
             </button>
+            </Link>
+            <Link to='/cart-page'>
             <button className='border border-0 ms-2'>
                 <i className='bi bi-cart'></i>
             </button>
+            </Link>
         </div>
     </MDBRow>
     <hr />
@@ -242,7 +248,7 @@ export default function ProductDetailPage() {
                 <span className='text-right ms-3 limelight1'>Black Sweatshirt with..</span>
                 <br></br>  
                 <span className=' ms-3 limelight2'>Jhanvi's Brand</span>
-                <button className='pay-btn border border-0'>$123.00</button>
+                <button className='pay-btn float-end border border-0'>$123.00</button>
             </div>
         </div>
         <div>

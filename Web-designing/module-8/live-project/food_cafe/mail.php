@@ -13,17 +13,17 @@ try {
     require 'SMTP.php';
     $mail = new PHPMailer(true); 
     //Server settings
-    $mail->SMTPDebug = false;                      //Enable verbose debug output
+    $mail->SMTPDebug = true;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'bkpandey.pandey@gmail.com';                     //SMTP username
-    $mail->Password   = 'luicudfmkjxmwovx';                               //SMTP password
+    $mail->Username   = 'malvipoo2205@gmail.com';                     //SMTP username
+    $mail->Password   = 'qfog fytk yylh itia';                               //SMTP password
     $mail->SMTPSecure = "TLS";            //Enable implicit TLS encryption
     $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     //Recipients
     $mail->setFrom($_POST["email"], 'Enquiry contact details');
-    $mail->addAddress('bkpandey.pandey@gmail.com', 'admin');     //Add a recipient
+    $mail->addAddress('malvipoo2205@gmail.com', 'admin');     //Add a recipient
 
     //Attachments
     // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments

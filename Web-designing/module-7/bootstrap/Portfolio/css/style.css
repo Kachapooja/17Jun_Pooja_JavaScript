@@ -89,6 +89,7 @@ header{
     font-size: 70px;
     font-family: 'Tilt Prism', cursive;
     text-shadow: 2px 5px 5px #02b973;
+    animation: infinite 5s fadeInTopLeft;
 }
 
 /* multi css end */
@@ -167,11 +168,17 @@ p{
 
 .works{
     position: relative;
-    height: 900px;
+    height: 1700px;
     background-color: #0c0c0c;
 }
 .work1{
     margin-left: 25%;
+}
+.img-fluid{
+    animation:alternate 5s flipInX;
+}
+.fnt{
+    animation: infinite 5s hinge;
 }
 
 /* work section end */

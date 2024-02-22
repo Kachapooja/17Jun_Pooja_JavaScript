@@ -1,18 +1,15 @@
 import React from 'react';
-import { MDBContainer,MDBRow } from 'mdb-react-ui-kit';
 import {Link} from 'react-router-dom';
-import logo from '../../images/logo.png';
-import cartrow from '../../images/cart-row.png';
-import cart1 from '../../images/cart1.png';
-import cart2 from '../../images/cart2.png';
-import cart3 from '../../images/cart3.png';
+import { MDBContainer ,MDBRow } from 'mdb-react-ui-kit';
+import logo from '../../images/logo.png'; 
 import googleplay from '../../images/googleplay-logo.png';
+import emptycart from '../../images/empty-cart.png';
 
-
-export default function CartPage() {
+export default function EmptyCartPage() {
   return (
+    
 <div>
-<MDBContainer fluid className='cart-page'>
+<MDBContainer fluid className='empty-cart'>
 
     {/*  main header section   */}
     <MDBRow className=''>
@@ -48,12 +45,13 @@ export default function CartPage() {
             </button>
             </Link>
             <Link to='/contact-detail-page'>
-            <button className='border border-0 ms-2'>
-                <i className='bi bi-person'></i>
-            </button>
+                <button className='border border-0 ms-2 text-white'
+                style={{backgroundColor:"#8a33fd"}}>
+                    <i className='bi bi-person'></i>
+                </button>
             </Link>
             <Link to='/cart-page'>
-            <button className='border border-0 text-white ms-2' style={{backgroundColor:"#8a33fd"}}>
+            <button className='border border-0 ms-2' >
                 <i className='bi bi-cart'></i>
             </button>
             </Link>
@@ -61,92 +59,17 @@ export default function CartPage() {
     </MDBRow>
     <hr />
 
-    {/* add to cart contain */}
+    <div className='text-center mt-5'>
+        <img src={emptycart} alt='' className='img-fluid'/>
+        <h3 className='mt-5 text-dark fw-bold'>Your cart is empty and sad :( </h3>
+        <span>Add something to make it happy!</span>
+    </div>
 
-    <section className=''>
-        <div className='ms-5 mt-5 d-flex fs-5 fw-lighter fw-semibold' style={{color:"#807d7e"}}>
-            <span>Home</span>&nbsp;
-            <i className='bi bi-chevron-right'></i>&nbsp;
-            <span style={{color:"#3c4242"}}>Add To Cart</span>            
-            <br></br><br></br>
-        </div>
-        <p className='ms-5' style={{color:"#807d7e"}}>Please fill in the fields below and click place order to complete your purchase!<br></br>Already registered?<Link to='/' style={{color:"#8a33fd"}}>Please login here</Link></p>
-    </section>
-
-    {/* cart detail */}
-    <section className='mt-5'>
-
-        <img src={cartrow} alt='' className='' style={{width:"101.8%",marginLeft:"-12px"}}/>
-
-        <div className='d-flex mt-5'>
-            <img src={cart1} alt='' style={{marginLeft:"6%"}}/>
-            <div className='ms-4' style={{color:"#807d7e"}}>
-                <b style={{color:"#3c4242",fontSize:"15px"}}>Blue Flower Print Crop Top</b><br></br>
-                <span style={{fontSize:"13px"}}>Color:Yellow</span><br></br>
-                <span style={{fontSize:"13px"}}>Size:M</span>
-            </div>
-            <span className='price-tab'>$29.00</span>
-            <button className='border border-0 rounded-5 px-4 cart-btn'>- &emsp;1 &emsp;+</button>
-            <span className='free-tab'>Free</span>
-            <span className='price-total-tab'>$29.00</span>
-            <i className='bi bi-trash text-primary'></i>
-        </div>
-
-        <div className='d-flex mt-5'>
-            <img src={cart2} alt='' style={{marginLeft:"6%"}}/>
-            <div className='ms-4' style={{color:"#807d7e"}}>
-                <b style={{color:"#3c4242",fontSize:"15px"}}>Lavender Hoodies</b><br></br>
-                <span style={{fontSize:"13px"}}>Color:Levender</span><br></br>
-                <span style={{fontSize:"13px"}}>Size:XXL</span>
-            </div>
-            <span className='price-tab1'>$119.00</span>
-            <button className='border border-0 rounded-5 px-4 cart-btn'>- &emsp;2 &emsp;+</button>
-            <span className='free-tab'>Free</span>
-            <span className='price-total-tab'>$119.00</span>
-            <i className='bi bi-trash text-primary'></i>
-        </div>
-
-        <div className='d-flex mt-5'>
-            <img src={cart3} alt='' style={{marginLeft:"6%"}}/>
-            <div className='ms-4' style={{color:"#807d7e"}}>
-                <b style={{color:"#3c4242",fontSize:"15px"}}>Black Sweatshirt</b><br></br>
-                <span style={{fontSize:"13px"}}>Color:Black</span><br></br>
-                <span style={{fontSize:"13px"}}>Size:XXL</span>
-            </div>
-            <span className='price-tab2'>$123.00</span>
-            <button className='border border-0 rounded-5 px-4 cart-btn'>- &emsp;2 &emsp;+</button>
-            <span className='free-tab'>Free</span>
-            <span className='price-total-tab'>$123.00</span>
-            <i className='bi bi-trash text-primary'></i>
-        </div>
-
-    </section>
-
-    {/* cart discount */}
-    <MDBRow className='mt-5 dscnt'>
-        <div className='col-md-5 ms-5 mt-4'>
-            <h5 style={{color:"#3c4242"}}>Discount Codes</h5>
-            <span style={{color:"#807d7e"}}>Enter your coupon code if you have one</span><br></br><br></br>
-            <input type='text' className='py-1 border border-1 rounded-start' />
-            <button className='py-1 px-4 border border-1 rounded-end text-white' style={{backgroundColor:"#8a33fd",marginLeft:"-10px"}}>Apply Coupon</button><br></br><br></br>
-            <button className='px-4 py-1 border border-1 rounded-3 bg-white' style={{color:"#3c4242"}}>Continue Shopping</button>
-        </div>
-        <div className='col-md-4 mt-4 total' style={{marginLeft:"15%",color:"#3c4242"}}>
-            <span>Sub Total</span>&emsp;&emsp;&emsp;&emsp;&emsp;
-            <span>$513.00</span><br></br>
-            <span>Shipping</span>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
-            <span>$5.00</span>
-            <br></br><br></br>
-            <span className='fw-bold'>Grand Total</span>&emsp;&emsp;&emsp;&ensp;&nbsp;
-            <span className='fw-bold'>$518.00</span>
-            <hr className='w-75'></hr><br></br>
-            <Link to="/check-out-page"><button className='ms-5 py-1 px-4 border border-1 rounded-2 text-white' style={{backgroundColor:"#8a33fd",fontSize:"15px"}}>Proceed To Checkout</button></Link>
-        </div>
-    </MDBRow>
+        <Link to='/'><button type='submit' className=' mt-4 px-3 py-1 border border-0 rounded-3 fs-5 text-white' style={{backgroundColor:"#8a33fd",marginLeft:"42%"}}>Continue Shopping</button></Link>
 
     {/* footer section */}
     <footer className="footer">
-        <MDBRow className='footer-body ms-5'>
+        <MDBRow className='footer-body ms-5 mt-5'>
         <div className='col-md-2 footer-text mt-5 ms-5'>
             <h3 className='text-white'>Need Help</h3>
             <br></br>
@@ -218,7 +141,6 @@ export default function CartPage() {
         <span className='mt-3 text-white ' style={{marginLeft:"30%"}}>Copyright &copy; 2023 Euphoria Folks Pvt Ltd. All rights reserved.</span>
     </footer>
     <hr></hr>
-
 </MDBContainer>
 </div>
   )
