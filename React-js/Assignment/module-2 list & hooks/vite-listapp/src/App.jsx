@@ -4,9 +4,9 @@ import UpdateList from './UpdateList';
 function App() {
   const listdata = 
   [
-    {id:1, name:"rutu"},
-    {id:2, name:"divyesh"},
-    {id:3, name:"deep"},
+    {id:1, name:"pooja"},
+    {id:2, name:"rakhi"},
+    {id:3, name:"dev"},
 
   ]
   return (
